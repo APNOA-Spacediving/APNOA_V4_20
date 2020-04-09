@@ -1,2 +1,2 @@
 @ECHO OFF
-start vvvv_alpha_x64\vvvv.exe --Redis 127.0.0.1:8889 /allowmultiple /showexceptions false /r ..\_patches\root.v4p
+start C:\vvvv\vvvv_beta_39_x64\vvvv.exe  /allowmultiple /showexceptions false /r D:\APNOA_V4_20\CONTENT\root.v4p
