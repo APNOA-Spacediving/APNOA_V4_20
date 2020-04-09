@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CORE\TXTR_FX.v4p" systemname="TXTR_FX" filename="D:\APNOA_V4\CORE\TXTR_FX.v4p" scrollx="660" scrolly="1365">
+   <PATCH nodename="D:\APNOA_V4_20\CORE\TXTR_FX.v4p" systemname="TXTR_FX" filename="D:\APNOA_V4\CORE\TXTR_FX.v4p" scrollx="0" scrolly="1530">
    <BOUNDS type="Window" left="18525" top="0" width="10275" height="17655">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
@@ -131,9 +131,9 @@
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="GlitchVertical">
    </PIN>
-   <PIN pinname="Fader" slicecount="1" values="0.48">
+   <PIN pinname="Fader" slicecount="1" values="0.88">
    </PIN>
-   <PIN pinname="Random Seed" slicecount="1" values="0.22">
+   <PIN pinname="Random Seed" slicecount="1" values="0.2">
    </PIN>
    </NODE>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="12">
@@ -239,9 +239,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="885" top="14070" width="100" height="100">
+   <BOUNDS type="Node" left="600" top="14505" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="885" top="14070" width="3000" height="3000">
+   <BOUNDS type="Box" left="600" top="14505" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
@@ -319,7 +319,7 @@
    </PIN>
    <PIN pinname="Input - Simulate" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9195" top="2055" width="9225" height="15060">
+   <BOUNDS type="Window" left="8160" top="270" width="12225" height="15660">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
@@ -419,7 +419,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="405" top="8895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.19">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -447,7 +447,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="405" top="10485" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.13">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.25">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -563,11 +563,11 @@
    </PIN>
    <PIN pinname="hue" slicecount="1" values="0.52">
    </PIN>
-   <BOUNDS type="Window" left="4380" top="6345" width="13920" height="10530">
+   <BOUNDS type="Window" left="4110" top="3990" width="13920" height="10530">
    </BOUNDS>
    </NODE>
    <NODE systemname="BlendBasic (DX11.TextureFX)" filename="%VVVV%\packs\dx11-vvvv-girlpower\nodes\texture11\Mixer\BlendBasic.tfx" nodename="BlendBasic (DX11.TextureFX)" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="2160" top="13290" width="100" height="100">
+   <BOUNDS type="Node" left="2235" top="13200" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -579,9 +579,9 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
-   <BOUNDS type="Box" left="2160" top="13290">
+   <BOUNDS type="Box" left="2235" top="13200">
    </BOUNDS>
-   <PIN pinname="Technique" slicecount="1" values="Fade">
+   <PIN pinname="Technique" slicecount="1" values="Mul">
    </PIN>
    </NODE>
    <LINK srcnodeid="27" srcpinname="Texture Out" dstnodeid="40" dstpinname="inputT">
@@ -593,11 +593,11 @@
    <LINK srcnodeid="41" srcpinname="Texture Out" dstnodeid="33" dstpinname="Texture In 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
-   <BOUNDS type="Box" left="615" top="12030" width="795" height="240">
+   <BOUNDS type="Box" left="495" top="12045" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="615" top="12030" width="0" height="0">
+   <BOUNDS type="Node" left="495" top="12045" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.63">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.18">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -654,8 +654,6 @@
    </NODE>
    <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="4" dstpinname="progress">
    </LINK>
-   <LINK srcnodeid="29" srcpinname="Texture Out" dstnodeid="40" dstpinname="control">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
@@ -665,5 +663,7 @@
    <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
    <LINK srcnodeid="33" srcpinname="Texture Out" dstnodeid="0" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="40" dstpinname="control">
    </LINK>
    </PATCH>

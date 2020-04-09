@@ -163,9 +163,9 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="0.28">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.108">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="0.08">
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.032">
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="14" dstpinname="Input">

@@ -25,7 +25,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1560" top="4590" width="100" height="100">
+   <BOUNDS type="Node" left="1560" top="4590" width="5715" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1560" top="4590" width="3000" height="3000">
    </BOUNDS>
@@ -36,6 +36,12 @@
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Enabled" visible="-1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2">
@@ -65,7 +71,7 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="180" top="675" width="21555" height="14205">
+   <BOUNDS type="Window" left="7245" top="645" width="21555" height="14205">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -142,4 +148,64 @@
    </PACK>
    <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
+   <NODE systemname="Chess_Grid" filename="..\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" nodename="..\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="9900" top="3120" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1890" top="0" width="29040" height="15855">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="9900" top="3120">
+   </BOUNDS>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SplineBuffered_01" filename="..\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" nodename="..\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" componentmode="InAWindow" id="21">
+   <BOUNDS type="Node" left="6240" top="3210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 4">
+   </LINK>
+   <NODE systemname="Evaluator" filename="Modules\Evaluator.v4p" componentmode="Hidden" id="22" nodename="Modules\Evaluator.v4p">
+   <BOUNDS type="Node" left="10395" top="2520" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10395" top="2520" width="4800" height="4800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18750" top="5730" width="2955" height="4440">
+   </BOUNDS>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Enable" dstnodeid="19" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Evaluate" dstnodeid="19" dstpinname="Evaluate">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="10395" top="1605" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10395" top="1605" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Evaluate">
+   </LINK>
    </PATCH>
