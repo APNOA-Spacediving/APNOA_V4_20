@@ -1,29 +1,33 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4\CORE\MODULES.v4p" systemname="MODULES" filename="D:\APNOA_V4\CORE\MODULES.v4p">
-   <BOUNDS type="Window" left="15060" top="0" width="5835" height="5910">
+   <PATCH nodename="D:\APNOA_V4_20\CORE\MODULES.v4p" systemname="MODULES" filename="D:\APNOA_V4\CORE\MODULES.v4p">
+   <BOUNDS type="Window" left="15060" top="0" width="13245" height="5910">
    </BOUNDS>
-   <PACK Name="dx11" Version="1.3.1.1">
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.6">
+   <PACK Name="dx11.particles" Version="1.0.7">
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
    <NODE systemname="SDF_Merger_01" filename="..\CONTENT\GEO_FX\SDF_Merger\SDF_Merger_01.v4p" nodename="..\CONTENT\GEO_FX\SDF_Merger\SDF_Merger_01.v4p" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="810" top="1620" width="100" height="100">
+   <BOUNDS type="Node" left="810" top="3165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    <BOUNDS type="Window" left="11205" top="165" width="14910" height="18105">
    </BOUNDS>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
+   </PIN>
+   <BOUNDS type="Box" left="810" top="3165">
+   </BOUNDS>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1560" top="3045" width="100" height="100">
+   <BOUNDS type="Node" left="1560" top="4590" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1560" top="3045" width="3000" height="3000">
+   <BOUNDS type="Box" left="1560" top="4590" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -31,11 +35,13 @@
    </PIN>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Enabled" visible="-1" pintype="Input" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2">
-   <BOUNDS type="Box" left="915" top="4725" width="795" height="240">
+   <BOUNDS type="Box" left="915" top="6270" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="915" top="4725" width="0" height="0">
+   <BOUNDS type="Node" left="915" top="6270" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
    </PIN>
@@ -43,33 +49,33 @@
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="915" top="4065" width="100" height="100">
+   <BOUNDS type="Node" left="915" top="5610" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="915" top="4065" width="3000" height="3000">
+   <BOUNDS type="Box" left="915" top="5610" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Layer Out" dstnodeid="3" dstpinname="Layer In">
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="2" dstpinname="Input Node">
    </LINK>
    <NODE systemname="DispMap_CntrlTxtr_01" filename="..\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" nodename="..\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="2760" top="1620" width="100" height="100">
+   <BOUNDS type="Node" left="2760" top="3165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="180" top="675" width="23115" height="14205">
+   <BOUNDS type="Window" left="180" top="675" width="21555" height="14205">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
+   <BOUNDS type="Box" left="2760" top="3165">
+   </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
-   <BOUNDS type="Box" left="4500" top="735" width="480" height="480">
+   <BOUNDS type="Box" left="4440" top="2430" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4500" top="735" width="0" height="0">
+   <BOUNDS type="Node" left="4440" top="2430" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -90,12 +96,30 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 2">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
-   <BOUNDS type="Box" left="1995" top="570" width="480" height="480">
+   <LINK srcnodeid="1" srcpinname="Layer Out" dstnodeid="3" dstpinname="Layer In">
+   </LINK>
+   <NODE systemname="Evaluator" filename="Modules\Evaluator.v4p" componentmode="Hidden" id="17" nodename="Modules\Evaluator.v4p">
+   <BOUNDS type="Node" left="1545" top="2370" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="1995" top="570" width="0" height="0">
+   <BOUNDS type="Box" left="1545" top="2370" width="4800" height="4800">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <BOUNDS type="Window" left="18750" top="5730" width="2955" height="4440">
+   </BOUNDS>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Enable" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Evaluate" dstnodeid="0" dstpinname="Evaluate">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Box" left="1560" top="1440" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1560" top="1440" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -105,9 +129,17 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Evaluate">
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Evaluate">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
+   </PACK>
+   <PACK Name="VVVV.Packs.Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="Watchdog" Version="1.0.0">
+   </PACK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4\CONTENT\TXTR_FX\Stripe_Glitch\stripedFlow_01.v4p" systemname="stripedFlow_01" filename="D:\APNOA_V4\CONTENT\TXTR_FX\Stripe_Glitch\stripedFlow_01.v4p" scrollx="765" scrolly="0">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\TXTR_FX\Stripe_Glitch\stripedFlow_01.v4p" systemname="stripedFlow_01" filename="D:\APNOA_V4\CONTENT\TXTR_FX\Stripe_Glitch\stripedFlow_01.v4p" scrollx="765" scrolly="0">
    <BOUNDS type="Window" left="1830" top="1755" width="12915" height="13185">
    </BOUNDS>
    <INFO author="" description="" tags="">
@@ -252,15 +252,15 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
    </PIN>
    </NODE>
-   <PACK Name="dx11" Version="1.3.1.1">
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.6">
+   <PACK Name="dx11.particles" Version="1.0.7">
    </PACK>
    <LINK srcnodeid="256" srcpinname="Output Node" dstnodeid="205" dstpinname="Control">
    </LINK>
-   <NODE systemname="stripedFlow (DX11.TextureFX)" filename="%VVVV%\packs\glitchpack_2\glitchpack\stripedFlow.tfx" nodename="stripedFlow (DX11.TextureFX)" componentmode="Hidden" id="261">
+   <NODE systemname="stripedFlow (DX11.TextureFX)" filename="%VVVV%\packs\glitchpack\stripedFlow.tfx" nodename="stripedFlow (DX11.TextureFX)" componentmode="Hidden" id="261">
    <BOUNDS type="Node" left="1785" top="7260" width="10530" height="270">
    </BOUNDS>
    <PIN pinname="pixelTex" visible="1" slicecount="1" values="||">
@@ -292,4 +292,12 @@
    </LINK>
    <LINK srcnodeid="261" srcpinname="Texture Out" dstnodeid="259" dstpinname="Input Node">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
+   </PACK>
+   <PACK Name="VVVV.Packs.Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="Watchdog" Version="1.0.0">
+   </PACK>
    </PATCH>
