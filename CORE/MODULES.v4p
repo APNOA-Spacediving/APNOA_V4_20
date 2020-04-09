@@ -23,6 +23,8 @@
    </PIN>
    <BOUNDS type="Box" left="810" top="3165">
    </BOUNDS>
+   <PIN pinname="Next" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="1560" top="4590" width="5715" height="270">
@@ -162,11 +164,13 @@
    <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="SplineBuffered_01" filename="..\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" nodename="..\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" componentmode="InAWindow" id="21">
+   <NODE systemname="SplineBuffered_01" filename="..\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" nodename="..\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="6240" top="3210" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="2475" top="0" width="15330" height="16110">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 3">
    </LINK>
@@ -207,5 +211,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Evaluate">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="690" top="2160" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="690" top="2160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Next">
    </LINK>
    </PATCH>
