@@ -177,6 +177,8 @@
    </PIN>
    <PIN pinname="Transform Buffer" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="61" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
    </LINK>
@@ -427,5 +429,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="101" srcpinname="Y Output Value" dstnodeid="100" dstpinname="XYZ">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="102">
+   <BOUNDS type="Box" left="11835" top="12000" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11835" top="12000" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="102" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Enabled">
    </LINK>
    </PATCH>

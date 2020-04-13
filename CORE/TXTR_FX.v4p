@@ -2,11 +2,11 @@
    <PATCH nodename="D:\APNOA_V4_20\CORE\TXTR_FX.v4p" systemname="TXTR_FX" filename="D:\APNOA_V4\CORE\TXTR_FX.v4p" scrollx="0" scrolly="1530">
    <BOUNDS type="Window" left="18525" top="0" width="10275" height="17655">
    </BOUNDS>
-   <PACK Name="dx11" Version="1.3.1">
+   <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -131,9 +131,9 @@
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="GlitchVertical">
    </PIN>
-   <PIN pinname="Fader" slicecount="1" values="0.88">
+   <PIN pinname="Fader" slicecount="1" values="0.86">
    </PIN>
-   <PIN pinname="Random Seed" slicecount="1" values="0.2">
+   <PIN pinname="Random Seed" slicecount="1" values="0.32">
    </PIN>
    </NODE>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="12">
@@ -419,7 +419,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="405" top="8895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.19">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.95">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -447,7 +447,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="405" top="10485" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.25">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.81">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -485,7 +485,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="495" top="13425" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.35">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -597,7 +597,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="495" top="12045" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.18">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.13">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

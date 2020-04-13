@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CORE\MODULES.v4p" systemname="MODULES" filename="D:\APNOA_V4\CORE\MODULES.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CORE\MODULES.v4p" systemname="MODULES" filename="D:\APNOA_V4\CORE\MODULES.v4p" scrollx="120" scrolly="225">
    <BOUNDS type="Window" left="15060" top="0" width="13245" height="5910">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -27,7 +27,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1560" top="4590" width="5715" height="270">
+   <BOUNDS type="Node" left="1560" top="4590" width="8985" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1560" top="4590" width="3000" height="3000">
    </BOUNDS>
@@ -39,11 +39,13 @@
    </PIN>
    <PIN pinname="Enabled" visible="-1" pintype="Input" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="4">
+   <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Layer 3" visible="1">
    </PIN>
    <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2">
@@ -151,13 +153,13 @@
    <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
    <NODE systemname="Chess_Grid" filename="..\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" nodename="..\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="9900" top="3120" width="100" height="100">
+   <BOUNDS type="Node" left="8250" top="3165" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="1890" top="0" width="29040" height="18105">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="9900" top="3120">
+   <BOUNDS type="Box" left="8250" top="3165">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -165,7 +167,7 @@
    </PIN>
    </NODE>
    <NODE systemname="SplineBuffered_01" filename="..\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" nodename="..\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="6240" top="3210" width="100" height="100">
+   <BOUNDS type="Node" left="6240" top="3165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
@@ -177,15 +179,17 @@
    </PIN>
    <PIN pinname="Switch" slicecount="1" values="1">
    </PIN>
+   <BOUNDS type="Box" left="6240" top="3165">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 4">
    </LINK>
    <NODE systemname="Evaluator" filename="Modules\Evaluator.v4p" componentmode="Hidden" id="22" nodename="Modules\Evaluator.v4p">
-   <BOUNDS type="Node" left="10395" top="2520" width="100" height="100">
+   <BOUNDS type="Node" left="8745" top="2520" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10395" top="2520" width="4800" height="4800">
+   <BOUNDS type="Box" left="8745" top="2520" width="4800" height="4800">
    </BOUNDS>
    <BOUNDS type="Window" left="18750" top="5730" width="2955" height="4440">
    </BOUNDS>
@@ -199,9 +203,9 @@
    <LINK srcnodeid="22" srcpinname="Evaluate" dstnodeid="19" dstpinname="Evaluate">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
-   <BOUNDS type="Box" left="10395" top="1605" width="480" height="480">
+   <BOUNDS type="Box" left="8745" top="1605" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="10395" top="1605" width="0" height="0">
+   <BOUNDS type="Node" left="8745" top="1605" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -257,5 +261,17 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Evaluate">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Evaluate" dstnodeid="9" dstpinname="Evaluate">
+   </LINK>
+   <NODE systemname="Boxes_in_a_Row" filename="..\CONTENT\GEO_FX\Boxes\Boxes_in_a_Row.v4p" componentmode="Hidden" id="26" nodename="..\CONTENT\GEO_FX\Boxes\Boxes_in_a_Row.v4p">
+   <BOUNDS type="Node" left="10470" top="3150" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10470" top="3150" width="4800" height="4800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9945" top="1455" width="17220" height="12780">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 5">
    </LINK>
    </PATCH>
