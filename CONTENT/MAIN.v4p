@@ -2,11 +2,11 @@
    <PATCH nodename="D:\APNOA_V4_20\CONTENT\MAIN.v4p" systemname="MAIN" filename="D:\APNOA_V4\CONTENT\MAIN.v4p">
    <BOUNDS type="Window" left="5130" top="0" width="10170" height="5880">
    </BOUNDS>
-   <PACK Name="dx11" Version="1.3.1">
+   <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -30,7 +30,7 @@
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="GLOBALS" filename="..\CORE\GLOBALS.v4p" componentmode="Hidden" id="2" nodename="..\CORE\GLOBALS.v4p">
+   <NODE systemname="GLOBALS" filename="..\CORE\GLOBALS.v4p" componentmode="InAWindow" id="2" nodename="..\CORE\GLOBALS.v4p">
    <BOUNDS type="Node" left="1455" top="780" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1455" top="780" width="4800" height="4800">

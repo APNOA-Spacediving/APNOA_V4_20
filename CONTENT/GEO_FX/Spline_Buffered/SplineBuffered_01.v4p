@@ -1,21 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" scrollx="15" scrolly="1815" systemname="SplineBuffered_01" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" scrollx="0" scrolly="705" systemname="SplineBuffered_01" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p">
    <BOUNDS type="Window" left="2475" top="0" width="15330" height="16110">
    </BOUNDS>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="40" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="11340" top="9000" width="1155" height="1200">
-   </BOUNDS>
-   <BOUNDS type="Node" left="11340" top="9000" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Tube">
-   </PIN>
-   <PIN pinname="Style" slicecount="1" values="List">
-   </PIN>
-   <PIN pinname="Output Enum" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Technique">
-   </PIN>
-   </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="1050" top="14070" width="100" height="100">
    </BOUNDS>
@@ -91,7 +77,7 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.05584,0.87396,0.73199,1.00000|" visible="1">
+   <PIN pinname="Color" slicecount="1" visible="1" values="|0.05584,0.87396,0.73199,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Geometry Out" dstnodeid="37" dstpinname="Geometry">
@@ -148,9 +134,9 @@
    </PACK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="dx11" Version="1.3.1">
+   <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <PACK Name="VVVV.Packs.Image" Version="0.2.0">
    </PACK>
@@ -270,12 +256,12 @@
    </LINK>
    <LINK srcnodeid="77" srcpinname="Radius_Buffer" dstnodeid="82" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Transform_InBackground" filename="Transforms\Transform_InBackground.v4p" componentmode="Hidden" id="85" nodename="Transforms\Transform_InBackground.v4p">
+   <NODE systemname="Transform_3Splines_X-reactive" filename="Transforms\Transform_3Splines_X-reactive.v4p" componentmode="Hidden" id="85" nodename="Transforms\Transform_3Splines_X-reactive.v4p">
    <BOUNDS type="Node" left="3720" top="4125" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3720" top="4125" width="4800" height="4800">
    </BOUNDS>
-   <BOUNDS type="Window" left="17610" top="3735" width="9000" height="11145">
+   <BOUNDS type="Window" left="6390" top="1005" width="15225" height="14565">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -334,32 +320,6 @@
    </LINK>
    <LINK srcnodeid="82" srcpinname="Output" dstnodeid="81" dstpinname="Data">
    </LINK>
-   <NODE nodename="SplineBuffered (DX11.Geometry)" componentmode="Hidden" id="92" systemname="SplineBuffered (DX11.Geometry)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.Geometry\SplineBuffered (DX11.Geometry)\SplineBuffered (DX11.Geometry).v4p">
-   <BOUNDS type="Node" left="1245" top="8820" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1245" top="8820" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2175" top="9210" width="23010" height="11475">
-   </BOUNDS>
-   <PIN pinname="Control Points Per Spline" slicecount="1" visible="1" values="12">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="40" srcpinname="Output Enum" dstnodeid="92" dstpinname="Technique">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="Buffer" dstnodeid="92" dstpinname="Control 3D Buffer">
-   </LINK>
-   <LINK srcnodeid="92" srcpinname="IID" dstnodeid="50" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Loop">
-   </LINK>
-   <LINK srcnodeid="92" srcpinname="Geometry Out" dstnodeid="61" dstpinname="Geometry">
-   </LINK>
-   <LINK srcnodeid="92" srcpinname="IID" dstnodeid="61" dstpinname="IID">
-   </LINK>
-   <LINK srcnodeid="81" srcpinname="Buffer" dstnodeid="92" dstpinname="Radius Buffer">
-   </LINK>
-   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Spline Count">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="94">
    <BOUNDS type="Box" left="2610" top="2520" width="795" height="240">
    </BOUNDS>
@@ -382,6 +342,90 @@
    </LINK>
    <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="77" dstpinname="Control Point Count">
    </LINK>
-   <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Control Points Per Spline">
+   <PACK Name="dx11-vvvv-girlpower" Version="33.0">
+   </PACK>
+   <NODE nodename="SplineBuffered (DX11.Geometry)" componentmode="Hidden" id="97" systemname="SplineBuffered (DX11.Geometry)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.Geometry\SplineBuffered (DX11.Geometry)\SplineBuffered (DX11.Geometry).v4p">
+   <BOUNDS type="Node" left="1245" top="8820" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1245" top="8820" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2175" top="9210" width="23010" height="11475">
+   </BOUNDS>
+   <PIN pinname="Technique" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Buffer" dstnodeid="97" dstpinname="Control 3D Buffer">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="IID" dstnodeid="50" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Loop">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="Geometry Out" dstnodeid="61" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="IID" dstnodeid="61" dstpinname="IID">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Buffer" dstnodeid="97" dstpinname="Radius Buffer">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Spline Count">
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Control Points Per Spline">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="98">
+   <BOUNDS type="Box" left="7185" top="3885" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7185" top="3885" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Tube">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Tube">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Output Enum" dstnodeid="97" dstpinname="Technique">
+   </LINK>
+   <NODE systemname="DynamicBuffer (DX11.Buffer Transform)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Transform)" componentmode="Hidden" id="99">
+   <BOUNDS type="Node" left="7650" top="11385" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7650" top="11385" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Buffer" visible="1">
+   </PIN>
+   <PIN pinname="Data" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="99" srcpinname="Buffer" dstnodeid="61" dstpinname="Transform Buffer">
+   </LINK>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="7920" top="10575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100" srcpinname="Transform Out" dstnodeid="99" dstpinname="Data">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="101">
+   <BOUNDS type="Box" left="9720" top="9240" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9720" top="9240" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.72,1,0.63">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="Y Output Value" dstnodeid="100" dstpinname="XYZ">
    </LINK>
    </PATCH>

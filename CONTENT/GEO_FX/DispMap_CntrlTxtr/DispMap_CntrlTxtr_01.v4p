@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" systemname="DispMap_CntrlTxtr_01" filename="D:\APNOA_V4\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" systemname="DispMap_CntrlTxtr_01" filename="D:\APNOA_V4\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" scrollx="0" scrolly="1620">
    <BOUNDS height="14205" left="7245" top="645" type="Window" width="21555">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -156,11 +156,11 @@
    </NODE>
    <LINK srcnodeid="327" srcpinname="Output Node" dstnodeid="306" dstpinname="Geometry In">
    </LINK>
-   <PACK Name="dx11" Version="1.3.1">
+   <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="364">
    <BOUNDS type="Box" left="1455" top="13770" width="795" height="240">
@@ -189,7 +189,7 @@
    </PIN>
    <PIN pinname="Transform Default" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
+   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="Transform Buffer" visible="1" slicecount="1" values="||">
    </PIN>
@@ -299,7 +299,7 @@
    </BOUNDS>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="Position In" slicecount="1" values="8" visible="1">
+   <PIN pinname="Position In" slicecount="1" visible="1" values="8">
    </PIN>
    <PIN pinname="Reset" slicecount="1" values="0">
    </PIN>
@@ -959,5 +959,29 @@
    <LINK srcnodeid="452" srcpinname="Y Output Value" dstnodeid="469" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="469" srcpinname="Output" dstnodeid="301" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="470">
+   <BOUNDS type="Box" left="21030" top="4770" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="21030" top="4770" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="337" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="306" dstpinname="Enabled">
    </LINK>
    </PATCH>

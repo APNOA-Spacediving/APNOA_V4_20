@@ -2,11 +2,11 @@
    <PATCH nodename="D:\APNOA_V4_20\CORE\MODULES.v4p" systemname="MODULES" filename="D:\APNOA_V4\CORE\MODULES.v4p">
    <BOUNDS type="Window" left="15060" top="0" width="13245" height="5910">
    </BOUNDS>
-   <PACK Name="dx11" Version="1.3.1">
+   <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -79,11 +79,13 @@
    </PIN>
    <BOUNDS type="Box" left="2760" top="3165">
    </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
-   <BOUNDS type="Box" left="4440" top="2430" width="480" height="480">
+   <BOUNDS type="Box" left="4140" top="1440" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4440" top="2430" width="0" height="0">
+   <BOUNDS type="Node" left="4140" top="1440" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -97,12 +99,10 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Evaluate">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Layer Out" dstnodeid="3" dstpinname="Layer In">
    </LINK>
@@ -127,7 +127,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1560" top="1440" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -137,7 +137,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Evaluate">
@@ -153,7 +153,7 @@
    <NODE systemname="Chess_Grid" filename="..\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" nodename="..\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="9900" top="3120" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="1890" top="0" width="29040" height="15855">
+   <BOUNDS type="Window" left="1890" top="0" width="29040" height="18105">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -171,6 +171,12 @@
    </PIN>
    <BOUNDS type="Window" left="2475" top="0" width="15330" height="16110">
    </BOUNDS>
+   <PIN pinname="Splines_Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Control Point Count" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 3">
    </LINK>
@@ -197,7 +203,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10395" top="1605" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -207,7 +213,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Evaluate">
@@ -231,5 +237,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Next">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="Evaluator" filename="Modules\Evaluator.v4p" componentmode="Hidden" id="25" nodename="Modules\Evaluator.v4p">
+   <BOUNDS type="Node" left="4140" top="2370" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4140" top="2370" width="4800" height="4800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18750" top="5730" width="2955" height="4440">
+   </BOUNDS>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Enable" dstnodeid="9" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Evaluate" dstnodeid="9" dstpinname="Evaluate">
    </LINK>
    </PATCH>

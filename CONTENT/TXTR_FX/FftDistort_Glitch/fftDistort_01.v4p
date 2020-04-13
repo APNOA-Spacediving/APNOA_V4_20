@@ -199,11 +199,13 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="47" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="2775" top="8640" width="795" height="240">
+   <BOUNDS type="Box" left="2700" top="9450" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2775" top="8640" width="0" height="0">
+   <BOUNDS type="Node" left="2700" top="9450" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="48" systemname="IOBox (Node)">
@@ -218,11 +220,11 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <PACK Name="dx11" Version="1.3.1">
+   <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <NODE systemname="R (Value)" filename="" nodename="R (Value)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="8775" top="3195" width="100" height="100">
@@ -318,8 +320,6 @@
    </LINK>
    <LINK srcnodeid="46" srcpinname="Output Node" dstnodeid="37" dstpinname="inputT">
    </LINK>
-   <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="47" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="45" srcpinname="Input Value" dstnodeid="37" dstpinname="Default SizeXY" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Output Node" dstnodeid="37" dstpinname="control">
@@ -339,7 +339,7 @@
    </PIN>
    <PIN pinname="FFT R" visible="1">
    </PIN>
-   <PIN pinname="amplify" slicecount="1" values="0.31">
+   <PIN pinname="amplify" slicecount="1" values="0.55" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Position Out" dstnodeid="12" dstpinname="FFT L" linkstyle="VHV">
@@ -368,4 +368,46 @@
    </PACK>
    <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
+   <NODE systemname="HSCB (DX11.TextureFX)" filename="%VVVV%\packs\dx11-vvvv-girlpower\nodes\texture11\Filter\HSCB.tfx" nodename="HSCB (DX11.TextureFX)" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="2715" top="8820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Contrast" slicecount="1" values="1.81">
+   </PIN>
+   <PIN pinname="Brightness" slicecount="1" values="0.15">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="57" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Texture Out" dstnodeid="47" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="11940" top="3975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Is Integer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="59">
+   <BOUNDS type="Node" left="11940" top="4410" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="59" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Change" dstnodeid="58" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Position Out" dstnodeid="12" dstpinname="amplify">
+   </LINK>
    </PATCH>

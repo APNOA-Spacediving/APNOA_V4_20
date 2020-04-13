@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4\CONTENT\GEO_FX\SDF_Merger\SDF_Module_03.v4p" systemname="SDF_Module_03" filename="D:\SDF_Merger\SDF_Module_03.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\SDF_Merger\SDF_Module_03.v4p" systemname="SDF_Module_03" filename="D:\SDF_Merger\SDF_Module_03.v4p" scrollx="900" scrolly="2130">
    <BOUNDS type="Window" left="7200" top="1380" width="17115" height="15660">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -29,7 +29,7 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <PIN pinname="Input Node" visible="1">
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
@@ -651,9 +651,9 @@
    <LINK srcnodeid="64" srcpinname="XYZ" dstnodeid="61" dstpinname="Rotate XYZ">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65">
-   <BOUNDS type="Box" left="11985" top="10470" width="795" height="480">
+   <BOUNDS type="Box" left="12150" top="10350" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="11985" top="10470" width="0" height="0">
+   <BOUNDS type="Node" left="12150" top="10350" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,-0.52">
    </PIN>
@@ -671,9 +671,9 @@
    <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Z">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="66">
-   <BOUNDS type="Box" left="11310" top="10545" width="795" height="480">
+   <BOUNDS type="Box" left="11265" top="10335" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="11310" top="10545" width="0" height="0">
+   <BOUNDS type="Node" left="11265" top="10335" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.58,0.96">
    </PIN>
@@ -773,13 +773,11 @@
    </BOUNDS>
    <PIN pinname="Shape" slicecount="1" values="Sine">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="72" dstpinname="Input">
-   </LINK>
    <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="73">
    <BOUNDS type="Node" left="15570" top="7005" width="100" height="100">
    </BOUNDS>
@@ -920,22 +918,6 @@
    </LINK>
    <LINK srcnodeid="58" srcpinname="Output" dstnodeid="71" dstpinname="Phase">
    </LINK>
-   <NODE systemname="ScalarOp (SF3D.Operators)" filename="%VVVV%\packs\FieldTrip\nodes\modules\SF3D\Operators\ScalarOp (SF3D.Operators).v4p" nodename="ScalarOp (SF3D.Operators)" componentmode="Hidden" id="84">
-   <BOUNDS type="Node" left="11415" top="12330" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Reverse Order" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 2 Default Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Operation" slicecount="1" visible="1" values="*">
-   </PIN>
-   </NODE>
    <NODE systemname="SphereSDF (SF3D.Sources)" filename="%VVVV%\packs\FieldTrip\nodes\modules\SF3D\Sources\SphereSDF (SF3D.Sources).v4p" nodename="SphereSDF (SF3D.Sources)" componentmode="Hidden" id="85">
    <BOUNDS type="Node" left="15510" top="11655" width="100" height="100">
    </BOUNDS>
@@ -943,7 +925,7 @@
    </PIN>
    <PIN pinname="Position" visible="1" slicecount="3" values="0,0,0">
    </PIN>
-   <PIN pinname="Radius" slicecount="1" visible="1" values="0.321">
+   <PIN pinname="Radius" slicecount="1" visible="1" values="0.763">
    </PIN>
    </NODE>
    <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="86">
@@ -951,11 +933,11 @@
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
-   <PIN pinname="Y" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y" visible="1" slicecount="1" values="1.836">
    </PIN>
    <PIN pinname="X" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Z" visible="1" slicecount="1" values="0">
+   <PIN pinname="Z" visible="1" slicecount="1" values="-6.71">
    </PIN>
    </NODE>
    <LINK srcnodeid="86" srcpinname="XYZ" dstnodeid="85" dstpinname="Position">
@@ -970,14 +952,6 @@
    <PIN pinname="Width" slicecount="1" values="1.53">
    </PIN>
    </NODE>
-   <LINK srcnodeid="87" srcpinname="Output" dstnodeid="86" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="85" srcpinname="Output" dstnodeid="84" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="84" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="84" srcpinname="Output" dstnodeid="67" dstpinname="Input 1 SDF">
-   </LINK>
    <NODE systemname="CircularSpread (Spreads)" nodename="CircularSpread (Spreads)" componentmode="Hidden" id="88">
    <BOUNDS type="Node" left="17220" top="10140" width="100" height="100">
    </BOUNDS>
@@ -985,17 +959,15 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="6">
    </PIN>
-   <PIN pinname="Input X" slicecount="1" values="0.46">
+   <PIN pinname="Input X" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Phase" slicecount="1" visible="1" values="0.77">
    </PIN>
    </NODE>
-   <LINK srcnodeid="88" srcpinname="Output X" dstnodeid="86" dstpinname="Z">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="89">
-   <BOUNDS type="Box" left="18225" top="11130" width="795" height="240">
+   <BOUNDS type="Box" left="18450" top="11340" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="18225" top="11130" width="0" height="0">
+   <BOUNDS type="Node" left="18450" top="11340" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="6" visible="1" values="0.289746222577199,0.00919226925006889,0.136124381346939,0.659365288172294,0.220438650703512,0.319299651666718">
    </PIN>
@@ -1003,9 +975,9 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="85" dstpinname="Radius">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="90">
    <BOUNDS type="Box" left="16905" top="9225" width="795" height="240">
    </BOUNDS>
@@ -1116,8 +1088,40 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="9" dstpinname="Input 1">
    </LINK>
+   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="60" dstpinname="Blend Default">
+   </LINK>
    <LINK srcnodeid="60" srcpinname="Output" dstnodeid="1" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="60" dstpinname="Blend Default">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100">
+   <BOUNDS type="Box" left="11880" top="9195" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11880" top="9195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="100" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Output" dstnodeid="86" dstpinname="X">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="101">
+   <BOUNDS type="Node" left="16980" top="11490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1.23">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="101" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Output" dstnodeid="85" dstpinname="Radius">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="67" dstpinname="Input 1 SDF">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="72" dstpinname="Input">
    </LINK>
    </PATCH>
