@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\SDF_Merger\SDF_Module_03.v4p" systemname="SDF_Module_03" filename="D:\SDF_Merger\SDF_Module_03.v4p" scrollx="900" scrolly="2130">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\SDF_Merger\SDF_Module_03.v4p" systemname="SDF_Module_03" filename="D:\SDF_Merger\SDF_Module_03.v4p" scrollx="2730" scrolly="1080">
    <BOUNDS type="Window" left="7200" top="1380" width="17115" height="15660">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -55,7 +55,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3540" top="3435" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.46,-0.37,0.53">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -139,7 +139,7 @@
    </PIN>
    <PIN pinname="Z" visible="1">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="0.1">
+   <PIN pinname="Y" slicecount="1" values="-0.1">
    </PIN>
    </NODE>
    <LINK srcnodeid="14" srcpinname="XYZ" dstnodeid="2" dstpinname="Y Input Value">
@@ -575,7 +575,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4275" top="870" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.71,1.28,0.42">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.71,1.7,0.42">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -595,7 +595,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -675,7 +675,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11265" top="10335" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.58,0.96">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1.19,2.89">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -707,7 +707,7 @@
    </PIN>
    <PIN pinname="Position" visible="1">
    </PIN>
-   <PIN pinname="Radius" slicecount="1" values="0.506">
+   <PIN pinname="Radius" slicecount="1" values="0.78">
    </PIN>
    </NODE>
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="67" dstpinname="Input 2 SDF">
@@ -753,7 +753,7 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="3.19">
+   <PIN pinname="Width" slicecount="1" values="5.16">
    </PIN>
    <PIN pinname="Phase" slicecount="1" visible="1" values="0.28">
    </PIN>
@@ -765,8 +765,6 @@
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="70" dstpinname="Z In">
    </LINK>
    <LINK srcnodeid="69" srcpinname="XYZ" dstnodeid="68" dstpinname="Position">
-   </LINK>
-   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="60" dstpinname="Input 2">
    </LINK>
    <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="72">
    <BOUNDS type="Node" left="11130" top="8640" width="100" height="100">
@@ -1123,5 +1121,7 @@
    <LINK srcnodeid="61" srcpinname="Output" dstnodeid="67" dstpinname="Input 1 SDF">
    </LINK>
    <LINK srcnodeid="31" srcpinname="Output" dstnodeid="72" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="60" dstpinname="Input 2">
    </LINK>
    </PATCH>
