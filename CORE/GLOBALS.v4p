@@ -270,4 +270,18 @@
    </PACK>
    <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
+   <BOUNDS type="Box" left="3180" top="1620" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3180" top="1620" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.05">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Initial Latitude">
+   </LINK>
    </PATCH>
