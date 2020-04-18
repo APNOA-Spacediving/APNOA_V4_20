@@ -79,7 +79,7 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   <PIN pinname="Layer 2" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="5" dstpinname="Layer 1">
@@ -96,6 +96,8 @@
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="6" srcpinname="Input Value" dstnodeid="5" dstpinname="Layer 2">
+   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
@@ -123,7 +125,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Evaluate">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Input Value" dstnodeid="5" dstpinname="Layer 2">
    </LINK>
    </PATCH>

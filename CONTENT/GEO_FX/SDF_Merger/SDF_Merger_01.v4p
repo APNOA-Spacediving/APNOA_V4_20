@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\SDF_Merger\SDF_Merger_01.v4p" systemname="SDF_Merger_01" filename="D:\SDF_Merger\SDF_Merger_01.v4p" scrollx="3255" scrolly="0">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\SDF_Merger\SDF_Merger_01.v4p" systemname="SDF_Merger_01" filename="D:\SDF_Merger\SDF_Merger_01.v4p" scrollx="5460" scrolly="360">
    <BOUNDS type="Window" left="11205" top="165" width="14910" height="18105">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -19,7 +19,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="34">
-   <BOUNDS type="Box" left="13395" top="5625" width="6420" height="240">
+   <BOUNDS type="Box" left="13395" top="5625" width="795" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="13395" top="5625" width="0" height="0">
    </BOUNDS>
@@ -37,7 +37,7 @@
    <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="33" dstpinname="Filename">
    </LINK>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="42">
-   <BOUNDS type="Node" left="12555" top="3945" width="750" height="270">
+   <BOUNDS type="Node" left="13395" top="4140" width="750" height="270">
    </BOUNDS>
    <PIN pinname="Directory" slicecount="1" visible="1" values="..\vvvv_50beta38.1_x64\packs\MatCapDx11\Lib">
    </PIN>
@@ -81,9 +81,9 @@
    <LINK srcnodeid="42" srcpinname="File Count" dstnodeid="40" dstpinname="Maximum">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
-   <BOUNDS type="Node" left="13575" top="2775" width="100" height="100">
+   <BOUNDS type="Node" left="13590" top="2505" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="13575" top="2775" width="285" height="240">
+   <BOUNDS type="Box" left="13590" top="2505" width="285" height="240">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -107,9 +107,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
-   <BOUNDS type="Node" left="13710" top="3540" width="100" height="100">
+   <BOUNDS type="Node" left="13725" top="3270" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="13710" top="3540" width="285" height="240">
+   <BOUNDS type="Box" left="13725" top="3270" width="285" height="240">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -135,7 +135,7 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Contrast" slicecount="1" values="0.25">
+   <PIN pinname="Contrast" slicecount="1" values="0.35">
    </PIN>
    <PIN pinname="Hue" slicecount="1" values="1.04">
    </PIN>
@@ -159,7 +159,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5640" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -169,7 +169,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="119" srcpinname="Y Output Value" dstnodeid="117" dstpinname="Evaluate">
@@ -205,11 +205,7 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
-   <PIN pinname="March Min Distance" slicecount="1" visible="1" values="0.05">
-   </PIN>
-   <PIN pinname="March Step Length" slicecount="1" visible="1" values="0.41">
-   </PIN>
-   <PIN pinname="Write Depth" slicecount="1" values="0">
+   <PIN pinname="March Min Distance" slicecount="1" values="0.05">
    </PIN>
    </NODE>
    <LINK srcnodeid="120" srcpinname="Y Output Value" dstnodeid="121" dstpinname="March Max Iterations">
@@ -226,7 +222,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="SDF_Module_03" filename="SDF_Module_03.v4p" componentmode="InAWindow" id="123" nodename="SDF_Module_03.v4p">
+   <NODE systemname="SDF_Module_03" filename="SDF_Module_03.v4p" componentmode="Hidden" id="123" nodename="SDF_Module_03.v4p">
    <BOUNDS type="Node" left="8610" top="3180" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="8610" top="3180" width="4800" height="3600">
@@ -263,7 +259,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7110" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -273,7 +269,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="122" dstpinname="Evaluate">
@@ -283,7 +279,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10095" top="3180" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2790" top="3060" width="23985" height="14055">
+   <BOUNDS type="Window" left="43515" top="0" width="12720" height="14055">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -304,8 +300,6 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Evaluate">
@@ -337,9 +331,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="147">
-   <BOUNDS type="Box" left="13380" top="1320" width="3915" height="240">
+   <BOUNDS type="Box" left="12000" top="1305" width="7875" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="13380" top="1320" width="0" height="0">
+   <BOUNDS type="Node" left="12000" top="1305" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="C:\vvvv\vvvv_beta_39_x64\packs\MatCapDx11\Lib">
    </PIN>
@@ -373,7 +367,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7470" top="6345" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.05">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.04">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -415,34 +409,6 @@
    <LINK srcnodeid="109" srcpinname="Texture Out" dstnodeid="121" dstpinname="MatCap Texture">
    </LINK>
    <LINK srcnodeid="121" srcpinname="Layer" dstnodeid="146" dstpinname="Input Node">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="152">
-   <BOUNDS type="Box" left="5925" top="5820" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5925" top="5820" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.41">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="152" srcpinname="Y Output Value" dstnodeid="121" dstpinname="March Step Length">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="156">
-   <BOUNDS type="Box" left="6195" top="6285" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6195" top="6285" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.05">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="156" srcpinname="Y Output Value" dstnodeid="121" dstpinname="March Min Distance">
    </LINK>
    <LINK srcnodeid="123" srcpinname="Output" dstnodeid="121" dstpinname="Input">
    </LINK>
