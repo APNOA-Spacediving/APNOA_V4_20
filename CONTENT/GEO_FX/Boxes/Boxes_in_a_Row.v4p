@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Boxes\Boxes_in_a_Row.v4p" systemname="Boxes_in_a_Row" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Boxes\Boxes_in_a_Row.v4p" scrollx="1170" scrolly="0">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Boxes\Boxes_in_a_Row.v4p" systemname="Boxes_in_a_Row" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Boxes\Boxes_in_a_Row.v4p" scrollx="855" scrolly="2025">
    <BOUNDS type="Window" left="9945" top="1455" width="17220" height="12780">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -57,7 +57,7 @@
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="0.61" visible="1">
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="0.61">
    </PIN>
    <PIN pinname="ScaleZ" slicecount="1" values="0.35">
    </PIN>
@@ -423,7 +423,7 @@
    </PIN>
    <PIN pinname="Color Indexing" slicecount="1" values="Instance">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Layer" dstnodeid="3" dstpinname="Input Node">
@@ -841,5 +841,27 @@
    <LINK srcnodeid="91" srcpinname="Change" dstnodeid="92" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="92" srcpinname="Output" dstnodeid="18" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="93">
+   <BOUNDS type="Box" left="16275" top="11055" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16275" top="11055" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Enabled">
    </LINK>
    </PATCH>

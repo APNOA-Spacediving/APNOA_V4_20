@@ -279,7 +279,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10095" top="3180" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="43515" top="0" width="12720" height="14055">
+   <BOUNDS type="Window" left="6120" top="1800" width="12720" height="14055">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -291,7 +291,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10110" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -300,6 +300,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Evaluate">
@@ -410,6 +412,6 @@
    </LINK>
    <LINK srcnodeid="121" srcpinname="Layer" dstnodeid="146" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="123" srcpinname="Output" dstnodeid="121" dstpinname="Input">
+   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="121" dstpinname="Input">
    </LINK>
    </PATCH>
