@@ -127,7 +127,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9015" top="7380" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.52">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.22">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -259,7 +259,7 @@
    </BOUNDS>
    <PIN pinname="Change" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="0.19" visible="1">
+   <PIN pinname="Period" slicecount="1" visible="1" values="0.19">
    </PIN>
    </NODE>
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="132">
@@ -473,9 +473,9 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5340" top="6360" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input" visible="1" slicecount="1" values="-0.73">
    </PIN>
-   <PIN pinname="Select" slicecount="1" values="12" visible="1">
+   <PIN pinname="Select" slicecount="1" visible="1" values="12">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>

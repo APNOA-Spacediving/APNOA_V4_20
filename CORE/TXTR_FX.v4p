@@ -447,7 +447,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="405" top="10485" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.81">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.14">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -485,7 +485,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="495" top="13425" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.13">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.77">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -524,8 +524,6 @@
    </NODE>
    <LINK srcnodeid="36" srcpinname="Texture Out" dstnodeid="37" dstpinname="Texture In">
    </LINK>
-   <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In 2">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
    <BOUNDS type="Box" left="6645" top="8355" width="795" height="960">
    </BOUNDS>
@@ -553,13 +551,13 @@
    </PIN>
    <PIN pinname="control" visible="1">
    </PIN>
-   <PIN pinname="scale" slicecount="1" values="0.477">
+   <PIN pinname="scale" slicecount="1" values="0.04">
    </PIN>
-   <PIN pinname="lightness" slicecount="1" values="0.68">
+   <PIN pinname="lightness" slicecount="1" values="0.57">
    </PIN>
-   <PIN pinname="progress" slicecount="1" values="0.47">
+   <PIN pinname="progress" slicecount="1" values="0.94">
    </PIN>
-   <PIN pinname="saturation" slicecount="1" values="0">
+   <PIN pinname="saturation" slicecount="1" values="0.18">
    </PIN>
    <PIN pinname="hue" slicecount="1" values="0.52">
    </PIN>
@@ -597,7 +595,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="495" top="12045" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.13">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.7">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -665,5 +663,7 @@
    <LINK srcnodeid="33" srcpinname="Texture Out" dstnodeid="0" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="40" dstpinname="control">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In 2">
    </LINK>
    </PATCH>
