@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\SDF_Merger\SDF_Merger_01.v4p" systemname="SDF_Merger_01" filename="D:\SDF_Merger\SDF_Merger_01.v4p" scrollx="5460" scrolly="360">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\SDF_Merger\SDF_Merger_01.v4p" systemname="SDF_Merger_01" filename="D:\SDF_Merger\SDF_Merger_01.v4p" scrollx="3405" scrolly="810">
    <BOUNDS type="Window" left="11205" top="165" width="14910" height="18105">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -138,6 +138,8 @@
    <PIN pinname="Contrast" slicecount="1" values="0.35">
    </PIN>
    <PIN pinname="Hue" slicecount="1" values="1.04">
+   </PIN>
+   <PIN pinname="Brightness" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Texture Out" dstnodeid="109" dstpinname="Texture In">
@@ -412,6 +414,20 @@
    </LINK>
    <LINK srcnodeid="121" srcpinname="Layer" dstnodeid="146" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="121" dstpinname="Input">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="152">
+   <BOUNDS type="Box" left="14625" top="5490" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14625" top="5490" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.91">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="152" srcpinname="Y Output Value" dstnodeid="109" dstpinname="Brightness">
+   </LINK>
+   <LINK srcnodeid="123" srcpinname="Output" dstnodeid="121" dstpinname="Input">
    </LINK>
    </PATCH>

@@ -34,12 +34,12 @@
    </NODE>
    <LINK srcnodeid="2" srcpinname="Layer" dstnodeid="3" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="MODULES" filename="MODULES.v4p" componentmode="InAWindow" id="4" nodename="MODULES.v4p">
+   <NODE systemname="MODULES" filename="MODULES.v4p" componentmode="Hidden" id="4" nodename="MODULES.v4p">
    <BOUNDS type="Node" left="2895" top="1740" width="6270" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="2895" top="1740" width="4800" height="4800">
    </BOUNDS>
-   <BOUNDS type="Window" left="15060" top="0" width="13245" height="5910">
+   <BOUNDS type="Window" left="12375" top="0" width="15930" height="5910">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>

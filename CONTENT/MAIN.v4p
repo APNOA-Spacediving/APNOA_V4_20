@@ -30,7 +30,7 @@
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="GLOBALS" filename="..\CORE\GLOBALS.v4p" componentmode="InAWindow" id="2" nodename="..\CORE\GLOBALS.v4p">
+   <NODE systemname="GLOBALS" filename="..\CORE\GLOBALS.v4p" componentmode="Hidden" id="2" nodename="..\CORE\GLOBALS.v4p">
    <BOUNDS type="Node" left="1455" top="780" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1455" top="780" width="4800" height="4800">
