@@ -10,7 +10,7 @@
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="RENDERING" filename="..\CORE\RENDERING.v4p" componentmode="Hidden" id="0" nodename="..\CORE\RENDERING.v4p">
+   <NODE systemname="RENDERING" filename="..\CORE\RENDERING.v4p" componentmode="InAWindow" id="0" nodename="..\CORE\RENDERING.v4p">
    <BOUNDS type="Node" left="1515" top="4665" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1515" top="4665" width="4800" height="4800">

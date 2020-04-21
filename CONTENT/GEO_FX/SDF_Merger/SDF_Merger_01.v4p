@@ -161,7 +161,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5640" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -171,7 +171,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="119" srcpinname="Y Output Value" dstnodeid="117" dstpinname="Evaluate">
@@ -241,7 +241,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8625" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -251,7 +251,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="126" srcpinname="Y Output Value" dstnodeid="123" dstpinname="Evaluate">
@@ -261,7 +261,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7110" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -271,7 +271,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="122" dstpinname="Evaluate">
@@ -428,6 +428,6 @@
    </NODE>
    <LINK srcnodeid="152" srcpinname="Y Output Value" dstnodeid="109" dstpinname="Brightness">
    </LINK>
-   <LINK srcnodeid="123" srcpinname="Output" dstnodeid="121" dstpinname="Input">
+   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="121" dstpinname="Input">
    </LINK>
    </PATCH>

@@ -209,7 +209,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8745" top="1440" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -219,7 +219,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Evaluate">
@@ -467,7 +467,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8295" top="5460" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-5.91,-7.54">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-5.38,-6.35">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

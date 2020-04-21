@@ -419,7 +419,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="405" top="8895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.24">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -433,7 +433,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="405" top="6465" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.01">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -447,7 +447,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="405" top="10485" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -485,7 +485,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="495" top="13425" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.59">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.75">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -595,7 +595,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="495" top="12045" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.86">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -722,8 +722,6 @@
    </NODE>
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="50" dstpinname="Texture In">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In 2">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
    <BOUNDS type="Box" left="8160" top="8025" width="795" height="240">
    </BOUNDS>
@@ -737,5 +735,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Random Seed">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In 2">
    </LINK>
    </PATCH>
