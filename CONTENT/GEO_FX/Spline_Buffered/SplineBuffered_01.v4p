@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" scrollx="0" scrolly="1815" systemname="SplineBuffered_01" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p" scrollx="0" scrolly="15" systemname="SplineBuffered_01" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_01.v4p">
    <BOUNDS type="Window" left="2475" top="0" width="15330" height="16110">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
@@ -339,7 +339,7 @@
    <LINK srcnodeid="102" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Enabled">
    </LINK>
    <NODE systemname="Transform_Y-Pos_asTrigger" filename="Transforms\Transform_Y-Pos_asTrigger.v4p" nodename="Transforms\Transform_Y-Pos_asTrigger.v4p" componentmode="Hidden" id="103">
-   <BOUNDS type="Node" left="7860" top="5055" width="100" height="100">
+   <BOUNDS type="Node" left="6690" top="5190" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -383,9 +383,9 @@
    <LINK srcnodeid="103" srcpinname="Radius_Buffer" dstnodeid="105" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="106">
-   <BOUNDS type="Box" left="8340" top="6270" width="480" height="480">
+   <BOUNDS type="Box" left="8265" top="6165" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8340" top="6270" width="0" height="0">
+   <BOUNDS type="Node" left="8265" top="6165" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -439,7 +439,7 @@
    <LINK srcnodeid="98" srcpinname="Output Enum" dstnodeid="107" dstpinname="Technique">
    </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="108">
-   <BOUNDS type="Node" left="8565" top="5805" width="100" height="100">
+   <BOUNDS type="Node" left="8340" top="5805" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -449,9 +449,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="109">
-   <BOUNDS type="Box" left="8970" top="3885" width="480" height="480">
+   <BOUNDS type="Box" left="8610" top="4305" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8970" top="3885" width="0" height="0">
+   <BOUNDS type="Node" left="8610" top="4305" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -469,7 +469,7 @@
    <LINK srcnodeid="109" srcpinname="Y Output Value" dstnodeid="108" dstpinname="Input 1">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="110">
-   <BOUNDS type="Node" left="9840" top="3900" width="100" height="100">
+   <BOUNDS type="Node" left="10215" top="4605" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -477,7 +477,7 @@
    </PIN>
    </NODE>
    <NODE systemname="MonoFlop (Animation Framebased)" nodename="MonoFlop (Animation Framebased)" componentmode="Hidden" id="111" filename="%VVVV%\addonpack\lib\nodes\plugins\MonoFlop.dll">
-   <BOUNDS type="Node" left="9660" top="4365" width="100" height="100">
+   <BOUNDS type="Node" left="10215" top="5085" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set" visible="1">
    </PIN>
@@ -485,13 +485,15 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="10215" top="5085">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="110" srcpinname="Bang" dstnodeid="111" dstpinname="Set">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="112">
-   <BOUNDS type="Box" left="9840" top="2910" width="480" height="480">
+   <BOUNDS type="Box" left="10215" top="3615" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9840" top="2910" width="0" height="0">
+   <BOUNDS type="Node" left="10215" top="3615" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -507,7 +509,7 @@
    <LINK srcnodeid="112" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Simulate">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="113">
-   <BOUNDS type="Node" left="10215" top="4770" width="100" height="100">
+   <BOUNDS type="Node" left="10215" top="5565" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -619,7 +621,7 @@
    </PIN>
    <PIN pinname="Displacment Texture Array" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Strength Default" slicecount="1" values="0.22" visible="1">
+   <PIN pinname="Strength Default" slicecount="1" visible="1" values="0.22">
    </PIN>
    </NODE>
    <LINK srcnodeid="107" srcpinname="Geometry Out" dstnodeid="119" dstpinname="Geometry In">
