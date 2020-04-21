@@ -161,7 +161,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5640" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -171,11 +171,11 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="119" srcpinname="Y Output Value" dstnodeid="117" dstpinname="Evaluate">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="120">
    <BOUNDS type="Box" left="6915" top="7455" width="795" height="240">
    </BOUNDS>
@@ -219,7 +219,7 @@
    </BOUNDS>
    <BOUNDS type="Box" width="4800" height="3600" left="7110" top="3180">
    </BOUNDS>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -241,7 +241,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8625" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -251,17 +251,17 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="126" srcpinname="Y Output Value" dstnodeid="123" dstpinname="Evaluate">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="127">
    <BOUNDS type="Box" left="7110" top="2175" width="480" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="7110" top="2175" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -271,12 +271,12 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="122" dstpinname="Evaluate">
-   </LINK>
-   <NODE systemname="SDF_Module_04" filename="SDF_Module_04.v4p" componentmode="Hidden" id="143" nodename="SDF_Module_04.v4p">
+   <NODE systemname="SDF_Module_04" filename="SDF_Module_04.v4p" componentmode="InAWindow" id="143" nodename="SDF_Module_04.v4p">
    <BOUNDS type="Node" left="10095" top="3180" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="10095" top="3180" width="4800" height="3600">
@@ -305,9 +305,9 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Evaluate">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="145">
    <BOUNDS type="Box" left="6300" top="6960" width="795" height="240">
    </BOUNDS>
@@ -429,5 +429,121 @@
    <LINK srcnodeid="152" srcpinname="Y Output Value" dstnodeid="109" dstpinname="Brightness">
    </LINK>
    <LINK srcnodeid="143" srcpinname="Output" dstnodeid="121" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="153">
+   <BOUNDS type="Node" left="5655" top="2760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="119" srcpinname="Y Output Value" dstnodeid="153" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Output" dstnodeid="117" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="119" srcpinname="Y Output Value" dstnodeid="153" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="154">
+   <BOUNDS type="Node" left="7110" top="2775" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="154" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="154" srcpinname="Output" dstnodeid="122" dstpinname="Evaluate">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="155">
+   <BOUNDS type="Node" left="8580" top="2790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="126" srcpinname="Y Output Value" dstnodeid="155" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Output" dstnodeid="123" dstpinname="Evaluate">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="156">
+   <BOUNDS type="Node" left="10050" top="2805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="156" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="156" srcpinname="Output" dstnodeid="143" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="156" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="126" srcpinname="Y Output Value" dstnodeid="155" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="154" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="157">
+   <BOUNDS type="Box" left="6660" top="1110" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6660" top="1110" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="OnOpen">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="153" dstpinname="Input 2" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6660" y="2188">
+   </LINKPOINT>
+   <LINKPOINT x="6000" y="2163">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="154" dstpinname="Input 2" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6720" y="2188">
+   </LINKPOINT>
+   <LINKPOINT x="7410" y="2163">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="155" dstpinname="Input 2" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6720" y="2188">
+   </LINKPOINT>
+   <LINKPOINT x="8880" y="2163">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="156" dstpinname="Input 2" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6720" y="2195">
+   </LINKPOINT>
+   <LINKPOINT x="10350" y="2170">
+   </LINKPOINT>
    </LINK>
    </PATCH>
