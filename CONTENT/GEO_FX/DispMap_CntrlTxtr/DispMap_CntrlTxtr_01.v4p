@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" systemname="DispMap_CntrlTxtr_01" filename="D:\APNOA_V4\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" scrollx="855" scrolly="705">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" systemname="DispMap_CntrlTxtr_01" filename="D:\APNOA_V4\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" scrollx="3600" scrolly="3435">
    <BOUNDS height="14205" left="7245" top="645" type="Window" width="21555">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -996,9 +996,9 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="337" dstpinname="Enabled">
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="337" dstpinname="Enabled" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="306" dstpinname="Enabled">
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="306" dstpinname="Enabled" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="471">
    <BOUNDS type="Box" left="3660" top="8175" width="480" height="480">
@@ -1489,7 +1489,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="5" visible="1">
+   <PIN pinname="Period" slicecount="1" visible="1" values="5">
    </PIN>
    <PIN pinname="Reverse" slicecount="1" values="1">
    </PIN>
@@ -1847,5 +1847,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="533" srcpinname="Output" dstnodeid="540" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="496" dstpinname="Enabled" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="490" dstpinname="Enabled" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

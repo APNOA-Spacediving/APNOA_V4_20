@@ -95,7 +95,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4140" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -105,7 +105,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1560" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -141,7 +141,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -173,7 +173,7 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="2475" top="0" width="15330" height="16110">
+   <BOUNDS type="Window" left="2475" top="0" width="18885" height="16110">
    </BOUNDS>
    <PIN pinname="Splines_Count" slicecount="1" values="3">
    </PIN>
@@ -497,13 +497,17 @@
    </PIN>
    </NODE>
    <NODE systemname="Content_Quads" filename="..\CONTENT\GEO_FX\Content_Quads\Content_Quads.v4p" componentmode="Hidden" id="40" nodename="..\CONTENT\GEO_FX\Content_Quads\Content_Quads.v4p">
-   <BOUNDS type="Node" left="4815" top="3600" width="100" height="100">
+   <BOUNDS type="Node" left="4575" top="3540" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4815" top="3600" width="4800" height="4800">
+   <BOUNDS type="Box" left="4575" top="3540" width="4800" height="4800">
    </BOUNDS>
    <BOUNDS type="Window" left="5160" top="1965" width="15060" height="14415">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Layer Out" dstnodeid="40" dstpinname="Layer">
@@ -638,6 +642,60 @@
    <LINKPOINT x="7695" y="1995">
    </LINKPOINT>
    <LINKPOINT x="870" y="1995">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Evaluator" filename="Modules\Evaluator.v4p" componentmode="Hidden" id="48" nodename="Modules\Evaluator.v4p">
+   <BOUNDS type="Node" left="5175" top="2535" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5175" top="2535" width="4800" height="4800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18750" top="5730" width="2955" height="4440">
+   </BOUNDS>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Enable" dstnodeid="40" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Evaluate" dstnodeid="40" dstpinname="Evaluate">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
+   <BOUNDS type="Box" left="5190" top="750" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5190" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="5175" top="2070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="48" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="50" dstpinname="Input 2" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="7695" y="1448">
+   </LINKPOINT>
+   <LINKPOINT x="5535" y="1448">
    </LINKPOINT>
    </LINK>
    </PATCH>
