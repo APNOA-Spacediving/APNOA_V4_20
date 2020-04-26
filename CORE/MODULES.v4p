@@ -81,7 +81,7 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="7245" top="645" width="21555" height="14205">
+   <BOUNDS type="Window" left="4410" top="0" width="24390" height="18000">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -173,7 +173,7 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="2475" top="0" width="18885" height="16110">
+   <BOUNDS type="Window" left="6045" top="615" width="18885" height="18300">
    </BOUNDS>
    <PIN pinname="Splines_Count" slicecount="1" values="3">
    </PIN>
@@ -361,6 +361,8 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="5700" top="1875" width="19875" height="15810">
+   </BOUNDS>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="32">
    <BOUNDS type="Node" left="3060" top="4140" width="100" height="100">
@@ -701,5 +703,65 @@
    <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 2">
+   </LINK>
+   <NODE id="51" systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Period" slicecount="1" pintype="Input" visible="1" values="10">
+   </PIN>
+   <PIN pinname="Change" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="5655" top="90" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reverse" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reset" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Phase" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Cycles" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="52" systemname="MonoFlop (Animation Framebased)" filename="%VVVV%\addonpack\lib\nodes\plugins\MonoFlop.dll" nodename="MonoFlop (Animation Framebased)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Frames" slicecount="1" pintype="Input" visible="1" values="320">
+   </PIN>
+   <PIN pinname="Set" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Node" left="5760" top="555" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5760" top="555" width="3000" height="3000">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Reset" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Retriggerable" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Inverse Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Change" dstnodeid="52" dstpinname="Set">
    </LINK>
    </PATCH>
