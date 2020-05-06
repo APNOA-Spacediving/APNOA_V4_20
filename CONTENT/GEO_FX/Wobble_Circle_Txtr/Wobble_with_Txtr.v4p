@@ -255,7 +255,7 @@
    </PIN>
    <PIN pinname="ScaleY" visible="1">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="0.6" visible="1">
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="0.6">
    </PIN>
    <PIN pinname="ScaleZ" visible="1">
    </PIN>
@@ -461,7 +461,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="157" visible="1">
+   <PIN pinname="Index" slicecount="1" visible="1" values="157">
    </PIN>
    </NODE>
    <LINK srcnodeid="27" srcpinname="Filenames" dstnodeid="30" dstpinname="Input">

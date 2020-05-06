@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
    <PATCH nodename="D:\APNOA_V4_20\CONTENT\MAIN.v4p" systemname="MAIN" filename="D:\APNOA_V4\CONTENT\MAIN.v4p">
-   <BOUNDS type="Window" left="5130" top="0" width="10170" height="5880">
+   <BOUNDS type="Window" left="5130" top="0" width="10170" height="3870">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
@@ -10,30 +10,30 @@
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="RENDERING" filename="..\CORE\RENDERING.v4p" componentmode="InAWindow" id="0" nodename="..\CORE\RENDERING.v4p">
-   <BOUNDS type="Node" left="1515" top="4665" width="100" height="100">
+   <NODE systemname="RENDERING" filename="..\CORE\RENDERING.v4p" componentmode="Hidden" id="0" nodename="..\CORE\RENDERING.v4p">
+   <BOUNDS type="Node" left="1515" top="2580" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1515" top="4665" width="4800" height="4800">
+   <BOUNDS type="Box" left="1515" top="2580" width="4800" height="4800">
    </BOUNDS>
    <BOUNDS type="Window" left="13365" top="6345" width="9000" height="9000">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="Hidden" id="1" nodename="..\CORE\CORE.v4p">
-   <BOUNDS type="Node" left="1500" top="3855" width="100" height="100">
+   <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="InAWindow" id="1" nodename="..\CORE\CORE.v4p">
+   <BOUNDS type="Node" left="1515" top="1770" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="3855" width="4800" height="4800">
+   <BOUNDS type="Box" left="1515" top="1770" width="4800" height="4800">
    </BOUNDS>
-   <BOUNDS type="Window" left="5145" top="5790" width="10140" height="7395">
+   <BOUNDS type="Window" left="5130" top="8685" width="10140" height="6540">
    </BOUNDS>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="GLOBALS" filename="..\CORE\GLOBALS.v4p" componentmode="Hidden" id="2" nodename="..\CORE\GLOBALS.v4p">
-   <BOUNDS type="Node" left="1455" top="780" width="100" height="100">
+   <BOUNDS type="Node" left="1515" top="780" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1455" top="780" width="4800" height="4800">
+   <BOUNDS type="Box" left="1515" top="780" width="4800" height="4800">
    </BOUNDS>
    <BOUNDS type="Window" left="19800" top="0" width="9000" height="5925">
    </BOUNDS>
@@ -41,9 +41,9 @@
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">
    </LINK>
    <NODE systemname="CONTROLLER" filename="..\CORE\CONTROLLER.v4p" componentmode="Hidden" id="3" nodename="..\CORE\CONTROLLER.v4p">
-   <BOUNDS type="Node" left="1425" top="1710" width="100" height="100">
+   <BOUNDS type="Node" left="1515" top="1275" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1425" top="1710" width="4800" height="4800">
+   <BOUNDS type="Box" left="1515" top="1275" width="4800" height="4800">
    </BOUNDS>
    <BOUNDS type="Window" left="15420" top="10665" width="13380" height="5085">
    </BOUNDS>

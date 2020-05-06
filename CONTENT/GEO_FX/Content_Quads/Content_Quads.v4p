@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Content_Quads\Content_Quads.v4p" systemname="Content_Quads" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Content_Quads\Content_Quads.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Content_Quads\Content_Quads.v4p" systemname="Content_Quads" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Content_Quads\Content_Quads.v4p" scrollx="0" scrolly="720">
    <BOUNDS type="Window" left="5160" top="1965" width="15060" height="14415">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -447,7 +447,7 @@
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="Centered">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="-1.03">
+   <PIN pinname="Input" slicecount="1" values="-2.24">
    </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="33" dstpinname="Y In">
@@ -535,13 +535,13 @@
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="21" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="7170" top="1800" width="100" height="100">
+   <BOUNDS type="Node" left="7305" top="1875" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="7">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="8" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="8">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -553,7 +553,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="15.73" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="15.73">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -573,7 +573,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="4" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="4">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -643,9 +643,9 @@
    <LINK srcnodeid="47" srcpinname="Output" dstnodeid="28" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
-   <BOUNDS type="Box" left="7170" top="3045" width="795" height="240">
+   <BOUNDS type="Box" left="7935" top="3045" width="555" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7170" top="3045" width="0" height="0">
+   <BOUNDS type="Node" left="7935" top="3045" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.98">
    </PIN>
@@ -663,7 +663,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="2.38" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="2.38">
    </PIN>
    <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
@@ -917,7 +917,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="8760" top="5025" width="100" height="100">
+   <BOUNDS type="Node" left="3480" top="2325" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -925,7 +925,7 @@
    </PIN>
    </NODE>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="68">
-   <BOUNDS type="Node" left="9045" top="4215" width="100" height="100">
+   <BOUNDS type="Node" left="3240" top="1230" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Change" visible="1">
    </PIN>
@@ -941,7 +941,7 @@
    <LINK srcnodeid="66" srcpinname="Output" dstnodeid="65" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="69">
-   <BOUNDS type="Box" left="8580" top="3030" width="795" height="240">
+   <BOUNDS type="Box" left="8580" top="3030" width="585" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="8580" top="3030" width="0" height="0">
    </BOUNDS>
@@ -955,7 +955,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="70">
-   <BOUNDS type="Node" left="8625" top="3555" width="100" height="100">
+   <BOUNDS type="Node" left="8310" top="3450" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="7">
    </PIN>
@@ -1003,5 +1003,21 @@
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="71" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="43" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73">
+   <BOUNDS type="Box" left="3135" top="2925" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3135" top="2925" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="73" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
