@@ -227,11 +227,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="129" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6390" top="2685" width="795" height="240">
+   <BOUNDS type="Box" left="6480" top="2895" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6390" top="2685" width="0" height="0">
+   <BOUNDS type="Node" left="6480" top="2895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.502216885099188">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -297,8 +297,6 @@
    <LINK srcnodeid="134" srcpinname="Position Out" dstnodeid="130" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="132" srcpinname="Output" dstnodeid="133" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="133" srcpinname="Output" dstnodeid="129" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="131" srcpinname="Change" dstnodeid="127" dstpinname="Y Input Value">
    </LINK>

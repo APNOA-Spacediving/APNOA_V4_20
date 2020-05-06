@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" scrollx="555" scrolly="0" systemname="Chess_Grid_II_180822" filename="C:\Users\tobi\Documents\VVVV\V4_TOA\_patches\Content\06_Rasters\Chess_Grid_II_180822.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" scrollx="105" scrolly="5295" systemname="Chess_Grid_II_180822" filename="C:\Users\tobi\Documents\VVVV\V4_TOA\_patches\Content\06_Rasters\Chess_Grid_II_180822.v4p">
    <BOUNDS type="Window" left="1890" top="0" width="29040" height="18105">
    </BOUNDS>
    <NODE systemname="DynamicBuffer (DX11.Buffer Transform)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Transform)" componentmode="Hidden" id="13">
@@ -1553,7 +1553,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10410" top="17685" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.82">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.27">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1593,7 +1593,7 @@
    </PIN>
    <PIN pinname="TranslateZ" slicecount="1" values="-4.76">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="-2.07">
+   <PIN pinname="TranslateY" slicecount="1" values="1.24">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="358">
@@ -1757,7 +1757,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2910" top="4110" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.023">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.38">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1990,8 +1990,6 @@
    <PIN pinname="Cycles" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="390" srcpinname="Output" dstnodeid="383" dstpinname="Phase">
-   </LINK>
    <NODE systemname="GaussianSpread (Spreads)" nodename="GaussianSpread (Spreads)" componentmode="Hidden" id="392">
    <BOUNDS type="Node" left="15495" top="15510" width="100" height="100">
    </BOUNDS>
@@ -2104,7 +2102,7 @@
    <PIN pinname="Input 2" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="341" srcpinname="Y Output Value" dstnodeid="399" dstpinname="Input 1">
+   <LINK srcnodeid="341" srcpinname="Y Output Value" dstnodeid="399" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="399" srcpinname="Output" dstnodeid="80" dstpinname="Enabled">
    </LINK>
@@ -2129,5 +2127,15 @@
    <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="399" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="390" srcpinname="Output" dstnodeid="357" dstpinname="Yaw">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="401">
+   <BOUNDS type="Node" left="18480" top="11670" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="bb">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="401" srcpinname="Input Value" dstnodeid="383" dstpinname="Phase">
    </LINK>
    </PATCH>

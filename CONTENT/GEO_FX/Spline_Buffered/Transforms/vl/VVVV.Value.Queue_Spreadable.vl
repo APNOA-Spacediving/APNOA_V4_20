@@ -24,6 +24,7 @@
             <Pin Id="P5tlW51Ky4PQDrBE3Y5gUz" Name="plus" Kind="InputPin" Bounds="337,33" />
             <Pin Id="Lw0vNOYm6EbMQ2zAoDMPcf" Name="Period" Kind="InputPin" Bounds="471,-76" />
             <Pin Id="PVigZMOQHhMPTOCAITXmhy" Name="FilterTime" Kind="InputPin" Bounds="436,364" />
+            <Pin Id="FQ7nEOOh8C9LUYVynLdacw" Name="Width" Kind="InputPin" Bounds="84,326" />
             <Pin Id="CIXOS2Trq59MDVTXubK2iV" Name="Output" Kind="OutputPin" Bounds="294,577" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
@@ -163,7 +164,11 @@
                       <Choice Kind="TypeFlag" Name="Float32" />
                     </p:TypeAnnotation>
                   </Pin>
-                  <Pin Id="DfAW2bJ1asuOfsb9PXJdkX" Name="Width" Kind="InputPin" />
+                  <Pin Id="DfAW2bJ1asuOfsb9PXJdkX" Name="Width" Kind="InputPin" DefaultValue="0.32">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
                   <Pin Id="EoTScn4uaG5LNjKD33xKFv" Name="Phase" Kind="InputPin">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="Float32" />
@@ -284,6 +289,7 @@
               </p:TypeAnnotation>
             </Pad>
             <ControlPoint Id="GI9EBv37gcHK9npUVeB5Vq" Bounds="443,534" />
+            <ControlPoint Id="POdzVYtMqrMNwIJ5O9OU6T" Bounds="84,326" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -338,6 +344,8 @@
           <Link Id="EYaMkMuyWVMMyP9X6RAs2J" Ids="SXeC5uAsBhjMkXKg9DKsMk,PD4nLG2jmDnMfmNBn3Pkhg" />
           <Link Id="JCgqozDC3XfO280GvgZCvK" Ids="K8tw410kiA6Mw6xFGd5mbn,BTcQpC08Kf9NI3F5OpQVrM" />
           <Link Id="Nb3FMIy4qXqNA2fIO56DTG" Ids="PD4nLG2jmDnMfmNBn3Pkhg,E0bnZXd74bKLO76twv5BIQ" />
+          <Link Id="AohM6qCb4HyO4d27ilL2Zy" Ids="POdzVYtMqrMNwIJ5O9OU6T,DfAW2bJ1asuOfsb9PXJdkX" />
+          <Link Id="RZsYuNjOXJiK9lMossPpaH" Ids="FQ7nEOOh8C9LUYVynLdacw,POdzVYtMqrMNwIJ5O9OU6T" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>

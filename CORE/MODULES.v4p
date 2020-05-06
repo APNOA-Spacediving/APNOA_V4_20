@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
    <PATCH nodename="D:\APNOA_V4_20\CORE\MODULES.v4p" systemname="MODULES" filename="D:\APNOA_V4\CORE\MODULES.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="12375" top="0" width="15930" height="5910">
+   <BOUNDS type="Window" left="5145" top="3780" width="14505" height="4275">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
@@ -76,12 +76,12 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="2" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="DispMap_CntrlTxtr_01" filename="..\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" nodename="..\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_01.v4p" componentmode="Hidden" id="9">
+   <NODE systemname="DispMap_CntrlTxtr_Creto" filename="..\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" nodename="..\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="2760" top="3165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4410" top="0" width="24390" height="18000">
+   <BOUNDS type="Window" left="8010" top="4155" width="24390" height="16500">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1560" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -141,7 +141,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -211,7 +211,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8745" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -221,7 +221,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -333,7 +333,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10485" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -343,7 +343,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -665,7 +665,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5190" top="750" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -677,7 +677,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="50">
