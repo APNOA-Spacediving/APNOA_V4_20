@@ -16,8 +16,8 @@
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="UDP_Receiver" filename="..\CTRL\UDP_Receiver.v4p" nodename="..\CTRL\UDP_Receiver.v4p" componentmode="InAWindow" id="1">
-   <BOUNDS type="Node" left="1830" top="2205" width="2430" height="270">
+   <NODE systemname="UDP_Receiver" filename="..\CTRL\UDP_Receiver.v4p" nodename="..\CTRL\UDP_Receiver.v4p" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="705" top="2310" width="3585" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="5130" top="3765" width="10200" height="10545">
    </BOUNDS>
@@ -29,11 +29,13 @@
    </PIN>
    <PIN pinname="song" visible="1">
    </PIN>
+   <PIN pinname="pad" visible="1">
+   </PIN>
    </NODE>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1815" top="2790" width="100" height="100">
+   <BOUNDS type="Node" left="690" top="2895" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -43,7 +45,7 @@
    <LINK srcnodeid="1" srcpinname="aa" dstnodeid="2" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="3030" top="2790" width="100" height="100">
+   <BOUNDS type="Node" left="1890" top="2895" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -125,7 +127,7 @@
    <LINK srcnodeid="4" srcpinname="Change" dstnodeid="10" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="4185" top="2790" width="100" height="100">
+   <BOUNDS type="Node" left="3060" top="2895" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -133,5 +135,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="song" dstnodeid="11" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="4215" top="2895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="pad">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="pad" dstnodeid="12" dstpinname="Input Value">
    </LINK>
    </PATCH>

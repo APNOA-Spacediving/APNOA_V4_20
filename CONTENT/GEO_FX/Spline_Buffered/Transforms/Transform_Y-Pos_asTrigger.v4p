@@ -183,7 +183,7 @@
    </PIN>
    <PIN pinname="Spread Count" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="23.14">
+   <PIN pinname="Width" slicecount="1" values="27.78">
    </PIN>
    <PIN pinname="Phase" slicecount="1" values="0">
    </PIN>
