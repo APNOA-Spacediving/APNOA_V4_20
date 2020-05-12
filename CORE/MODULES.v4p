@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CORE\MODULES.v4p" systemname="MODULES" filename="D:\APNOA_V4\CORE\MODULES.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\APNOA_V4_20\CORE\MODULES.v4p" systemname="MODULES" filename="D:\APNOA_V4\CORE\MODULES.v4p" scrollx="0" scrolly="225">
    <BOUNDS type="Window" left="5145" top="3780" width="14580" height="4275">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -81,7 +81,7 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="8010" top="4155" width="24390" height="16500">
+   <BOUNDS type="Window" left="2970" top="2340" width="24390" height="16500">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -267,7 +267,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10470" top="3150" width="4800" height="4800">
    </BOUNDS>
-   <BOUNDS type="Window" left="9945" top="1455" width="17220" height="12780">
+   <BOUNDS type="Window" left="5040" top="-105" width="22125" height="18105">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -331,7 +331,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10485" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -341,7 +341,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -405,7 +405,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13155" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -415,7 +415,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -822,8 +822,6 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="25" dstpinname="Evaluate">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="63">
    <BOUNDS type="Node" left="4560" top="165" width="100" height="100">
    </BOUNDS>
@@ -847,7 +845,7 @@
    <LINK srcnodeid="64" srcpinname="Output" dstnodeid="62" dstpinname="Input 2">
    </LINK>
    <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="5835" top="570" width="100" height="100">
+   <BOUNDS type="Node" left="6510" top="615" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -873,5 +871,21 @@
    <LINK srcnodeid="65" srcpinname="Output" dstnodeid="66" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="66" srcpinname="Output" dstnodeid="42" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="4140" top="2145" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="67" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="25" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="67" dstpinname="Input 2">
    </LINK>
    </PATCH>
