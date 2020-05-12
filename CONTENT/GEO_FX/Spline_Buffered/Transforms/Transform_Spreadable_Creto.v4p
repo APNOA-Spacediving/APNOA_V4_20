@@ -1061,7 +1061,7 @@
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="274">
    <BOUNDS type="Node" left="10365" top="1740" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" values="1.5" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="1.5">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" visible="1" values="5">
    </PIN>
@@ -1207,7 +1207,7 @@
    </PIN>
    <PIN pinname="Spread Count" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.2">
+   <PIN pinname="Width" slicecount="1" values="1.46">
    </PIN>
    <PIN pinname="Phase" slicecount="1" values="0.5">
    </PIN>

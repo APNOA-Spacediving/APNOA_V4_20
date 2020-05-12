@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CTRL\UDP_Receiver.v4p" systemname="UDP_Receiver" filename="D:\APNOA_V4_20\CTRL\UDP_Receiver.v4p" scrollx="0" scrolly="105">
+   <PATCH nodename="D:\APNOA_V4_20\CTRL\UDP_Receiver.v4p" systemname="UDP_Receiver" filename="D:\APNOA_V4_20\CTRL\UDP_Receiver.v4p" scrollx="0" scrolly="765">
    <BOUNDS type="Window" left="5130" top="3765" width="10200" height="10545">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -47,6 +47,8 @@
    </PIN>
    <PIN pinname="Match Rule" slicecount="1" values="Last">
    </PIN>
+   <PIN pinname="OnReceive" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="OSCDecoder (Network)" nodename="OSCDecoder (Network)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="3765" top="5010" width="100" height="100">
@@ -83,7 +85,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2370" top="4650" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="/aa">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/states">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -244,9 +246,13 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="8" dstpinname="Input">
+   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="8" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="9" dstpinname="Input">
+   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="9" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="2205" y="4575">
+   </LINKPOINT>
+   <LINKPOINT x="3765" y="4575">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="188" srcpinname="Output" dstnodeid="193" dstpinname="Set">
    </LINK>
@@ -263,9 +269,9 @@
    <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="272" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2145" top="8985" width="795" height="240">
+   <BOUNDS type="Box" left="2190" top="8985" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2145" top="8985" width="0" height="0">
+   <BOUNDS type="Node" left="2190" top="8985" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -273,7 +279,7 @@
    </PIN>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="aa">
+   <PIN pinname="Descriptive Name" slicecount="1" values="state">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="273" systemname="IOBox (Value Advanced)">
@@ -290,31 +296,7 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="bb">
    </PIN>
    </NODE>
-   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="272" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="94" srcpinname="Output" dstnodeid="273" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="UDP (Network Server)" nodename="UDP (Network Server)" componentmode="Hidden" id="277">
-   <BOUNDS type="Node" left="3885" top="2325" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="277" dstpinname="Local Port">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="277" dstpinname="Queue Mode">
-   </LINK>
-   <LINK srcnodeid="277" srcpinname="Queue Count" dstnodeid="79" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="277" srcpinname="Queue Count" dstnodeid="185" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="187" srcpinname="Y Output Value" dstnodeid="277" dstpinname="Buffer Size">
-   </LINK>
-   <LINK srcnodeid="277" srcpinname="Output" dstnodeid="193" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="3870" y="3320">
-   </LINKPOINT>
-   <LINKPOINT x="2205" y="3145">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="OSCDecoder (Network)" nodename="OSCDecoder (Network)" componentmode="Hidden" id="282">
    <BOUNDS type="Node" left="4935" top="4980" width="100" height="100">
@@ -388,7 +370,11 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="song">
    </PIN>
    </NODE>
-   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="282" dstpinname="Input">
+   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="282" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="2205" y="4560">
+   </LINKPOINT>
+   <LINKPOINT x="4935" y="4560">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="284">
    <BOUNDS type="Node" left="4920" top="6465" width="100" height="100">
@@ -538,7 +524,11 @@
    </NODE>
    <LINK srcnodeid="290" srcpinname="Output" dstnodeid="288" dstpinname="Go To Position">
    </LINK>
-   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="295" dstpinname="Input">
+   <LINK srcnodeid="193" srcpinname="Output" dstnodeid="295" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="2205" y="4523">
+   </LINKPOINT>
+   <LINKPOINT x="6795" y="4523">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="296">
    <BOUNDS type="Box" left="7890" top="5220" width="480" height="480">
@@ -589,5 +579,97 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="298" srcpinname="Y Output Value" dstnodeid="288" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="299">
+   <BOUNDS type="Box" left="3075" top="6570" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3075" top="6570" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="OnReceive" dstnodeid="299" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="301">
+   <BOUNDS type="Node" left="2145" top="6555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="301" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="302">
+   <BOUNDS type="Node" left="2175" top="7890" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Up" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Down" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="302" srcpinname="Output" dstnodeid="272" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="303">
+   <BOUNDS type="Box" left="3060" top="7200" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3060" top="7200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="303" srcpinname="Y Output Value" dstnodeid="302" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="304">
+   <BOUNDS type="Node" left="2160" top="7335" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="301" srcpinname="OnChange" dstnodeid="304" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="304" srcpinname="Up Edge" dstnodeid="302" dstpinname="Up">
+   </LINK>
+   <NODE systemname="UDP (Network Server)" nodename="UDP (Network Server)" componentmode="Hidden" id="305">
+   <BOUNDS type="Node" left="3885" top="2325" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="305" dstpinname="Local Port">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="305" dstpinname="Queue Mode">
+   </LINK>
+   <LINK srcnodeid="305" srcpinname="Queue Count" dstnodeid="79" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="305" srcpinname="Queue Count" dstnodeid="185" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="187" srcpinname="Y Output Value" dstnodeid="305" dstpinname="Buffer Size">
+   </LINK>
+   <LINK srcnodeid="305" srcpinname="Output" dstnodeid="193" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3870" y="3320">
+   </LINKPOINT>
+   <LINKPOINT x="2205" y="3145">
+   </LINKPOINT>
    </LINK>
    </PATCH>

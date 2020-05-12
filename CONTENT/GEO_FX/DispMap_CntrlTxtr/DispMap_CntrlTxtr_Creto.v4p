@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" systemname="DispMap_CntrlTxtr_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" scrollx="0" scrolly="195">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" systemname="DispMap_CntrlTxtr_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" scrollx="7905" scrolly="6090">
    <BOUNDS height="16500" left="8010" top="4155" type="Window" width="24390">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -163,9 +163,9 @@
    <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="364" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1290" top="17610" width="795" height="240">
+   <BOUNDS type="Box" left="1230" top="17880" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1290" top="17610" width="0" height="0">
+   <BOUNDS type="Node" left="1230" top="17880" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
    </PIN>
@@ -1912,26 +1912,6 @@
    </LINK>
    <LINK srcnodeid="532" srcpinname="Output" dstnodeid="526" dstpinname="Go To Position">
    </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="559">
-   <BOUNDS type="Node" left="18825" top="585" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="aa">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="560">
-   <BOUNDS type="Box" left="18870" top="1095" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="18870" top="1095" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="559" srcpinname="Input Value" dstnodeid="560" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="561">
    <BOUNDS type="Node" left="15300" top="405" width="100" height="100">
    </BOUNDS>
@@ -2055,7 +2035,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="1">
+   <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
    </NODE>
    <LINK srcnodeid="569" srcpinname="Input Value" dstnodeid="570" dstpinname="Input 1">

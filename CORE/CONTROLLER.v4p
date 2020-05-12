@@ -16,7 +16,7 @@
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="UDP_Receiver" filename="..\CTRL\UDP_Receiver.v4p" nodename="..\CTRL\UDP_Receiver.v4p" componentmode="Hidden" id="1">
+   <NODE systemname="UDP_Receiver" filename="..\CTRL\UDP_Receiver.v4p" nodename="..\CTRL\UDP_Receiver.v4p" componentmode="InAWindow" id="1">
    <BOUNDS type="Node" left="705" top="2310" width="3585" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="5130" top="3765" width="10200" height="10545">
@@ -39,10 +39,10 @@
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
-   <PIN pinname="Send String" slicecount="1" values="aa">
+   <PIN pinname="Send String" slicecount="1" values="states">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="aa" dstnodeid="2" dstpinname="Input Value">
+   <LINK srcnodeid="1" srcpinname="state" dstnodeid="2" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="1890" top="2895" width="100" height="100">
