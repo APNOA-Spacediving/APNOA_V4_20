@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CORE\TXTR_FX.v4p" systemname="TXTR_FX" filename="D:\APNOA_V4\CORE\TXTR_FX.v4p" scrollx="0" scrolly="3420">
+   <PATCH nodename="D:\APNOA_V4_20\CORE\TXTR_FX.v4p" systemname="TXTR_FX" filename="D:\APNOA_V4\CORE\TXTR_FX.v4p" scrollx="0" scrolly="3855">
    <BOUNDS type="Window" left="18525" top="0" width="10275" height="17655">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -433,7 +433,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="435" top="10290" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5.77">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -737,13 +737,13 @@
    <LINK srcnodeid="55" srcpinname="Output Enum" dstnodeid="53" dstpinname="Technique">
    </LINK>
    <NODE systemname="Edge (DX11.TextureFX)" filename="%VVVV%\packs\dx11-vvvv-girlpower\nodes\texture11\Filter\Edge.tfx" nodename="Edge (DX11.TextureFX)" componentmode="Hidden" id="56">
-   <BOUNDS type="Node" left="6480" top="13155" width="100" height="100">
+   <BOUNDS type="Node" left="6180" top="12150" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Bright" slicecount="1" values="0.74">
+   <PIN pinname="Bright" slicecount="1" values="0.66">
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="FastEdge">
    </PIN>
@@ -763,6 +763,8 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="58">
    <BOUNDS type="Node" left="7560" top="14025" width="100" height="100">
@@ -773,8 +775,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="58" srcpinname="Output" dstnodeid="57" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="56" srcpinname="Texture Out" dstnodeid="57" dstpinname="Texture">
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="62">
    <BOUNDS type="Node" left="5685" top="13215" width="100" height="100">
@@ -929,7 +929,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7740" top="6735" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -937,8 +937,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="72" dstpinname="Input 3">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Input Value" dstnodeid="32" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="74">
    <BOUNDS type="Node" left="1410" top="10410" width="330" height="270">
@@ -1053,7 +1051,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8655" top="12165" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.24">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1077,5 +1075,103 @@
    <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="83" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="83" srcpinname="Output" dstnodeid="81" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="84">
+   <BOUNDS type="Node" left="6660" top="13830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" values="-0.06">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Transform Out" dstnodeid="57" dstpinname="Texture Transform">
+   </LINK>
+   <NODE systemname="fftDistort_01" filename="..\CONTENT\TXTR_FX\FftDistort_Glitch\fftDistort_01.v4p" nodename="..\CONTENT\TXTR_FX\FftDistort_Glitch\fftDistort_01.v4p" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="6915" top="12855" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="inputT" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="control" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="scale" slicecount="1" values="0.04">
+   </PIN>
+   <PIN pinname="lightness" slicecount="1" values="0.35">
+   </PIN>
+   <PIN pinname="progress" slicecount="1" visible="1" values="0.94">
+   </PIN>
+   <PIN pinname="saturation" slicecount="1" values="0.18">
+   </PIN>
+   <PIN pinname="hue" slicecount="1" values="0.52">
+   </PIN>
+   <BOUNDS type="Window" left="4110" top="3990" width="13920" height="10530">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="85" dstpinname="control">
+   </LINK>
+   <NODE systemname="Blend (DX11.TextureFX)" filename="%VVVV%\packs\dx11-vvvv-girlpower\nodes\texture11\Mixer\Blend.tfx" nodename="Blend (DX11.TextureFX)" componentmode="Hidden" id="86">
+   <BOUNDS type="Node" left="6240" top="13380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 2" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Opacity" slicecount="1" visible="1" values="0.61">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="Screen">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Texture Out" dstnodeid="86" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="85" srcpinname="Texture Out" dstnodeid="86" dstpinname="Texture In 2">
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Texture Out" dstnodeid="57" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output Node" dstnodeid="85" dstpinname="inputT">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="87">
+   <BOUNDS type="Node" left="5955" top="9720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="bb">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="88">
+   <BOUNDS type="Node" left="6690" top="10920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Input Value" dstnodeid="88" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output" dstnodeid="86" dstpinname="Opacity">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Input Value" dstnodeid="32" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="6825" top="9375" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Input Value" dstnodeid="89" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="88" dstpinname="Input 2">
    </LINK>
    </PATCH>

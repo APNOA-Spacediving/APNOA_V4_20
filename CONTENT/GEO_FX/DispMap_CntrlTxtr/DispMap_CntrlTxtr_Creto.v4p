@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" systemname="DispMap_CntrlTxtr_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" scrollx="0" scrolly="3045">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" systemname="DispMap_CntrlTxtr_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" scrollx="0" scrolly="4065">
    <BOUNDS height="16500" left="2970" top="2340" type="Window" width="24390">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -759,7 +759,7 @@
    </PIN>
    <PIN pinname="TranslateX" visible="1">
    </PIN>
-   <PIN pinname="TranslateZ" slicecount="1" values="0.92">
+   <PIN pinname="TranslateZ" slicecount="1" values="-1.38">
    </PIN>
    <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
    </PIN>
@@ -2125,5 +2125,7 @@
    <LINK srcnodeid="583" srcpinname="Y Output Value" dstnodeid="451" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="373" srcpinname="Geometry Out" dstnodeid="451" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="496" srcpinname="Layer" dstnodeid="484" dstpinname="Layer 2">
    </LINK>
    </PATCH>

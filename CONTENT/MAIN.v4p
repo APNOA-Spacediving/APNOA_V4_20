@@ -20,7 +20,7 @@
    <PIN pinname="Layers" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="InAWindow" id="1" nodename="..\CORE\CORE.v4p">
+   <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="Hidden" id="1" nodename="..\CORE\CORE.v4p">
    <BOUNDS type="Node" left="1515" top="1785" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1515" top="1785" width="4800" height="4800">
@@ -45,7 +45,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1515" top="1275" width="4800" height="4800">
    </BOUNDS>
-   <BOUNDS type="Window" left="15030" top="8685" width="13380" height="5085">
+   <BOUNDS type="Window" left="5145" top="12915" width="13380" height="5085">
    </BOUNDS>
    </NODE>
    <PACK Name="vvvv-Message" Version="2.9.10">

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
    <PATCH nodename="D:\APNOA_V4_20\CORE\CONTROLLER.v4p" systemname="CONTROLLER" filename="D:\APNOA_V4_20\CORE\CONTROLLER.v4p">
-   <BOUNDS type="Window" left="15030" top="8685" width="13380" height="5085">
+   <BOUNDS type="Window" left="5145" top="12915" width="13380" height="5085">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
    </PACK>
@@ -16,10 +16,10 @@
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="UDP_Receiver" filename="..\CTRL\UDP_Receiver.v4p" nodename="..\CTRL\UDP_Receiver.v4p" componentmode="InAWindow" id="1">
+   <NODE systemname="UDP_Receiver" filename="..\CTRL\UDP_Receiver.v4p" nodename="..\CTRL\UDP_Receiver.v4p" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="705" top="2310" width="3585" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="5130" top="3765" width="10200" height="10545">
+   <BOUNDS type="Window" left="12360" top="3900" width="10200" height="10545">
    </BOUNDS>
    <PIN pinname="substate" visible="1" slicecount="1" values="0">
    </PIN>
@@ -145,5 +145,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="pad" dstnodeid="12" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="8565" top="2325" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Change" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="8550" top="2970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="ClockToggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="14" dstpinname="Input Value">
    </LINK>
    </PATCH>

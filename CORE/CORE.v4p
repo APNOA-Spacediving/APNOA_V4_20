@@ -25,6 +25,8 @@
    </PIN>
    <PIN pinname="Texture In 2" visible="1">
    </PIN>
+   <PIN pinname="MAinFader" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="3">
    <BOUNDS type="Box" left="2745" top="5340" width="795" height="240">
@@ -185,5 +187,21 @@
    <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
    <LINK srcnodeid="4" srcpinname="Buffers" dstnodeid="2" dstpinname="Texture In 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
+   <BOUNDS type="Box" left="1560" top="4380" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1560" top="4380" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.989">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="MAinFader">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="2" dstpinname="MAinFader">
    </LINK>
    </PATCH>
