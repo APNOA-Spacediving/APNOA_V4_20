@@ -1,8 +1,8 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CORE\TXTR_FX.v4p" systemname="TXTR_FX" filename="D:\APNOA_V4\CORE\TXTR_FX.v4p" scrollx="0" scrolly="3855">
+   <PATCH nodename="D:\APNOA_V4_20\CORE\TXTR_FX.v4p" systemname="TXTR_FX" filename="D:\APNOA_V4\CORE\TXTR_FX.v4p" scrollx="2580" scrolly="840">
    <BOUNDS type="Window" left="18525" top="0" width="10275" height="17655">
    </BOUNDS>
-   <PACK Name="dx11" Version="1.3.1.1">
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
@@ -129,7 +129,7 @@
    </PIN>
    <PIN pinname="Use Default Size" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" values="GlitchHorizontal">
+   <PIN pinname="Technique" slicecount="1" values="GlitchHorizontal" visible="1">
    </PIN>
    <PIN pinname="Fader" slicecount="1" visible="1" values="0.45">
    </PIN>
@@ -613,9 +613,9 @@
    <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="40" dstpinname="control">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
-   <BOUNDS type="Box" left="6960" top="9165" width="795" height="240">
+   <BOUNDS type="Box" left="7335" top="9315" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6960" top="9165" width="0" height="0">
+   <BOUNDS type="Node" left="7335" top="9315" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -625,22 +625,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Fader">
-   </LINK>
-   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="7185" top="5505" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Change" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="7125" top="5955" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="47" srcpinname="Change" dstnodeid="48" dstpinname="Enabled">
    </LINK>
    <NODE systemname="Decay (Animation)" nodename="Decay (Animation)" componentmode="Hidden" id="49">
    <BOUNDS type="Node" left="7035" top="7755" width="100" height="100">
@@ -853,7 +837,7 @@
    <LINK srcnodeid="64" srcpinname="Output" dstnodeid="67" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="68">
-   <BOUNDS type="Node" left="7080" top="7170" width="100" height="100">
+   <BOUNDS type="Node" left="7035" top="7005" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1005,7 +989,7 @@
    <LINK srcnodeid="78" srcpinname="Output" dstnodeid="56" dstpinname="Radius">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="79">
-   <BOUNDS type="Node" left="8310" top="9525" width="100" height="100">
+   <BOUNDS type="Node" left="9465" top="6870" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="states">
    </PIN>
@@ -1173,7 +1157,7 @@
    <LINK srcnodeid="89" srcpinname="Output" dstnodeid="88" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="90">
-   <BOUNDS type="Node" left="7290" top="8610" width="100" height="100">
+   <BOUNDS type="Node" left="7050" top="8175" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Destination Minimum" slicecount="1" values="-0.05">
    </PIN>
@@ -1184,6 +1168,58 @@
    </NODE>
    <LINK srcnodeid="49" srcpinname="Output" dstnodeid="90" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="46" dstpinname="Y Input Value">
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="91">
+   <BOUNDS type="Box" left="4410" top="8970" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4410" top="8970" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="GlitchHorizontal">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="GlitchHorizontal">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="91" srcpinname="Output Enum" dstnodeid="11" dstpinname="Technique">
+   </LINK>
+   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="92">
+   <BOUNDS type="Node" left="9030" top="8610" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="79" srcpinname="Input Value" dstnodeid="92" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="93">
+   <BOUNDS type="Node" left="7380" top="8820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="93" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="46" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="94">
+   <BOUNDS type="Node" left="8955" top="8985" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="92" srcpinname="Output" dstnodeid="94" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Position Out" dstnodeid="93" dstpinname="Input 2">
    </LINK>
    </PATCH>
