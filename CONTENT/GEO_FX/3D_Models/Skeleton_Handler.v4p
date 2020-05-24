@@ -1,0 +1,137 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\3D_Models\Skeleton_Handler.v4p" systemname="Skeleton_Handler" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\3D_Models\Skeleton_Handler.v4p">
+   <BOUNDS type="Window" left="20385" top="1560" width="8175" height="7320">
+   </BOUNDS>
+   <NODE systemname="Skeleton (Skeleton Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\assimp\VVVV.DX11.Nodes.Assimp.dll" nodename="Skeleton (Skeleton Assimp)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2895" top="2160" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2895" top="2160" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Root" visible="1">
+   </PIN>
+   <PIN pinname="Scene" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3585" top="1485" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3585" top="1485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Genesis">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="0" dstpinname="Root">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2865" top="825" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2865" top="825" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Scene">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="0" dstpinname="Scene">
+   </LINK>
+   <NODE systemname="SetJoint (Skeleton)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="SetJoint (Skeleton)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2895" top="4155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   <PIN pinname="Joint Name" visible="1">
+   </PIN>
+   <PIN pinname="Animation Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Skeleton" dstnodeid="3" dstpinname="Skeleton">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4710" top="3510" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4710" top="3510" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="hip">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="3" dstpinname="Joint Name">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="5" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2925" top="5250" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2925" top="5250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Skeleton">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Skeleton" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="dx11-vvvv-girlpower" Version="33.0">
+   </PACK>
+   <PACK Name="dx11.particles" Version="1.0.6">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="39.0.0">
+   </PACK>
+   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="5325" top="2595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="3" dstpinname="Animation Transform">
+   </LINK>
+   <NODE systemname="SkinningAssimp (DX11.Effect)" filename="%VVVV%\packs\mp.dx\nodes\dx11\SkinningAssimp.fx" nodename="SkinningAssimp (DX11.Effect)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1425" top="6105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Technique" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="4110" top="5490" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4110" top="5490" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Layout">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Layout">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output Enum" dstnodeid="7" dstpinname="Technique">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="9">
+   <BOUNDS type="Node" left="5385" top="5100" width="525" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5385" top="5100" width="525" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="skinn">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>

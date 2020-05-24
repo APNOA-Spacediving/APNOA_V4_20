@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" systemname="DispMap_CntrlTxtr_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" scrollx="0" scrolly="4065">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" systemname="DispMap_CntrlTxtr_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\DispMap_CntrlTxtr\DispMap_CntrlTxtr_Creto.v4p" scrollx="255" scrolly="2445">
    <BOUNDS height="16500" left="2970" top="2340" type="Window" width="24390">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -193,7 +193,7 @@
    </PIN>
    <PIN pinname="Transform Buffer" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Color Indexing" slicecount="1" values="Instance" visible="1">
+   <PIN pinname="Color Indexing" slicecount="1" visible="1" values="Instance">
    </PIN>
    <PIN pinname="Ambient Default XYZW" visible="1" slicecount="1" values="|0.15198,0.15198,0.15198,1.00000|">
    </PIN>
@@ -759,7 +759,7 @@
    </PIN>
    <PIN pinname="TranslateX" visible="1">
    </PIN>
-   <PIN pinname="TranslateZ" slicecount="1" values="-1.38">
+   <PIN pinname="TranslateZ" slicecount="1" values="-3.93">
    </PIN>
    <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1823,9 +1823,9 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="0.3">
+   <PIN pinname="Destination Maximum" slicecount="1" values="1.13">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="-0.3">
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.79">
    </PIN>
    </NODE>
    <LINK srcnodeid="513" srcpinname="Output" dstnodeid="555" dstpinname="Input">

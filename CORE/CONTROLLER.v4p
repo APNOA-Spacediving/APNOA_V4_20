@@ -16,7 +16,7 @@
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="UDP_Receiver" filename="..\CTRL\UDP_Receiver.v4p" nodename="..\CTRL\UDP_Receiver.v4p" componentmode="Hidden" id="1">
+   <NODE systemname="UDP_Receiver" filename="..\CTRL\UDP_Receiver.v4p" nodename="..\CTRL\UDP_Receiver.v4p" componentmode="InAWindow" id="1">
    <BOUNDS type="Node" left="705" top="2310" width="3585" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="12360" top="3900" width="10200" height="10545">

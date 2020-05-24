@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_Creto.v4p" scrollx="0" scrolly="0" systemname="SplineBuffered_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_Creto.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_Creto.v4p" scrollx="120" scrolly="0" systemname="SplineBuffered_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_Creto.v4p">
    <BOUNDS type="Window" left="6045" top="615" width="18885" height="18300">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
@@ -165,7 +165,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3555" top="1500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -508,34 +508,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE nodename="SplineBuffered (DX11.Geometry)" componentmode="Hidden" id="166" systemname="SplineBuffered (DX11.Geometry)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.Geometry\SplineBuffered (DX11.Geometry)\SplineBuffered (DX11.Geometry).v4p">
-   <BOUNDS type="Node" left="1245" top="8820" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1245" top="8820" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2175" top="9210" width="23010" height="11475">
-   </BOUNDS>
-   <PIN pinname="Radius Indexing" slicecount="1" values="Segment">
-   </PIN>
-   <PIN pinname="Resolution" slicecount="1" values="64">
-   </PIN>
-   <PIN pinname="Geometry Out" visible="1">
-   </PIN>
-   <PIN pinname="Control Points Per Spline" visible="1">
-   </PIN>
-   <PIN pinname="Spline Count" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="47" srcpinname="Buffer" dstnodeid="166" dstpinname="Control 3D Buffer">
-   </LINK>
-   <LINK srcnodeid="166" srcpinname="IID" dstnodeid="50" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="81" srcpinname="Buffer" dstnodeid="166" dstpinname="Radius Buffer">
-   </LINK>
-   <LINK srcnodeid="98" srcpinname="Output Enum" dstnodeid="166" dstpinname="Technique">
-   </LINK>
-   <LINK srcnodeid="160" srcpinname="Y Output Value" dstnodeid="166" dstpinname="Enabled">
-   </LINK>
    <LINK srcnodeid="149" srcpinname="PointsPerSpline" dstnodeid="142" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="167" systemname="IOBox (Value Advanced)">
@@ -695,7 +667,7 @@
    <NODE systemname="SuperPhong_Splines" filename="..\..\TXTR_FX\SuperPhong\SuperPhong_Splines.v4p" nodename="..\..\TXTR_FX\SuperPhong\SuperPhong_Splines.v4p" componentmode="Hidden" id="169">
    <BOUNDS type="Node" left="4485" top="18390" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Geometry" visible="1">
+   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -714,8 +686,6 @@
    <PIN pinname="bumpy" slicecount="1" values="0.02">
    </PIN>
    </NODE>
-   <LINK srcnodeid="166" srcpinname="Geometry Out" dstnodeid="169" dstpinname="Geometry">
-   </LINK>
    <LINK srcnodeid="172" srcpinname="XYZ" dstnodeid="169" dstpinname="Translate XYZ">
    </LINK>
    <LINK srcnodeid="173" srcpinname="Input Value" dstnodeid="169" dstpinname="Camera PositionXYZ">
@@ -830,10 +800,6 @@
    </LINK>
    <LINK srcnodeid="129" srcpinname="Output" dstnodeid="179" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="142" srcpinname="Output" dstnodeid="166" dstpinname="Control Points Per Spline">
-   </LINK>
-   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="166" dstpinname="Spline Count">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="190" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4005" top="14400" width="795" height="720">
    </BOUNDS>
@@ -857,22 +823,18 @@
    </PIN>
    <PIN pinname="Color Indexing" slicecount="1" values="Instance">
    </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="102" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Buffer" dstnodeid="191" dstpinname="Transform Buffer">
-   </LINK>
-   <LINK srcnodeid="166" srcpinname="IID" dstnodeid="191" dstpinname="IID">
-   </LINK>
-   <LINK srcnodeid="166" srcpinname="Geometry Out" dstnodeid="191" dstpinname="Geometry">
    </LINK>
    <LINK srcnodeid="183" srcpinname="Buffer" dstnodeid="191" dstpinname="Ambient 4D Buffer">
    </LINK>
    <LINK srcnodeid="184" srcpinname="Buffer" dstnodeid="191" dstpinname="Diffuse 4D Buffer">
    </LINK>
    <LINK srcnodeid="185" srcpinname="Buffer" dstnodeid="191" dstpinname="Specular 4D Buffer">
-   </LINK>
-   <LINK srcnodeid="189" srcpinname="Render State" dstnodeid="191" dstpinname="Render State">
    </LINK>
    <LINK srcnodeid="190" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Light DirectionXYZ">
    </LINK>
@@ -1021,7 +983,7 @@
    <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="202">
    <BOUNDS type="Node" left="7890" top="8505" width="100" height="100">
    </BOUNDS>
-   <PIN pinname=".. To [" slicecount="1" values="6" visible="1">
+   <PIN pinname=".. To [" slicecount="1" visible="1" values="6">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1135,7 +1097,7 @@
    <LINK srcnodeid="208" srcpinname="Output" dstnodeid="209" dstpinname="Enabled">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="211">
-   <BOUNDS type="Node" left="8865" top="990" width="100" height="100">
+   <BOUNDS type="Node" left="8505" top="1065" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="states">
    </PIN>
@@ -1207,5 +1169,35 @@
    <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="216" srcpinname="Output" dstnodeid="202" dstpinname=".. To [">
+   </LINK>
+   <NODE nodename="SplineBuffered (DX11.Geometry)" componentmode="Hidden" id="217" systemname="SplineBuffered (DX11.Geometry)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.Geometry\SplineBuffered (DX11.Geometry)\SplineBuffered (DX11.Geometry).v4p">
+   <BOUNDS type="Node" left="1245" top="8820" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1245" top="8820" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2175" top="9210" width="23010" height="11475">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Buffer" dstnodeid="217" dstpinname="Control 3D Buffer">
+   </LINK>
+   <LINK srcnodeid="217" srcpinname="IID" dstnodeid="50" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Buffer" dstnodeid="217" dstpinname="Radius Buffer">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Output Enum" dstnodeid="217" dstpinname="Technique">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="Y Output Value" dstnodeid="217" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="217" srcpinname="Geometry Out" dstnodeid="169" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Output" dstnodeid="217" dstpinname="Control Points Per Spline">
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="217" dstpinname="Spline Count">
+   </LINK>
+   <LINK srcnodeid="217" srcpinname="IID" dstnodeid="191" dstpinname="IID">
+   </LINK>
+   <LINK srcnodeid="217" srcpinname="Geometry Out" dstnodeid="191" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="189" srcpinname="Render State" dstnodeid="191" dstpinname="Render State">
    </LINK>
    </PATCH>

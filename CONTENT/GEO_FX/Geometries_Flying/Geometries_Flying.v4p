@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" systemname="Geometries_Flying" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" scrollx="1575" scrolly="2400">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" systemname="Geometries_Flying" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" scrollx="5145" scrolly="495">
    <BOUNDS type="Window" left="5040" top="-105" width="22125" height="18105">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -11,9 +11,9 @@
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="3" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="3150" top="18030" width="795" height="240">
+   <BOUNDS type="Box" left="2985" top="18360" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3150" top="18030" width="0" height="0">
+   <BOUNDS type="Node" left="2985" top="18360" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -340,42 +340,6 @@
    <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="GouraudDirectionalBuffered (DX11.Layer)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.Layer\GouraudDirectionalBuffered (DX11.Layer)\GouraudDirectionalBuffered (DX11.Layer).v4p" nodename="GouraudDirectionalBuffered (DX11.Layer)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="3165" top="17040" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Ambient Default XYZW" visible="1" slicecount="1" values="|0.15198,0.15198,0.15198,0.00000|">
-   </PIN>
-   <PIN pinname="Diffuse Default XYZW" visible="1" slicecount="1" values="|0.85000,0.85000,0.85000,0.00000|">
-   </PIN>
-   <PIN pinname="Specular Default XYZW" visible="1" slicecount="1" values="|0.35000,0.35000,0.35000,0.00000|">
-   </PIN>
-   <PIN pinname="Technique" slicecount="1" values="GouraudDirectionalTextured">
-   </PIN>
-   <PIN pinname="Sampler" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Power Default" slicecount="1" values="26.6">
-   </PIN>
-   <PIN pinname="Ambient 4D Buffer" visible="1">
-   </PIN>
-   <PIN pinname="Diffuse 4D Buffer" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Specular 4D Buffer" visible="1">
-   </PIN>
-   <PIN pinname="Color Indexing" slicecount="1" values="Instance">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Geometry" visible="1">
-   </PIN>
-   <PIN pinname="IID" visible="1">
-   </PIN>
-   <PIN pinname="Transform Buffer" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
    <NODE systemname="DynamicBuffer (DX11.Buffer Color)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Color)" componentmode="Hidden" id="44">
    <BOUNDS type="Node" left="8925" top="16350" width="100" height="100">
    </BOUNDS>
@@ -386,12 +350,6 @@
    <PIN pinname="Buffer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="44" srcpinname="Buffer" dstnodeid="38" dstpinname="Ambient 4D Buffer" linkstyle="VHV">
-   <LINKPOINT x="8925" y="16815">
-   </LINKPOINT>
-   <LINKPOINT x="5235" y="16815">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="DynamicBuffer (DX11.Buffer Color)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Color)" componentmode="Hidden" id="46">
    <BOUNDS type="Node" left="11265" top="16350" width="100" height="100">
    </BOUNDS>
@@ -402,12 +360,6 @@
    <PIN pinname="Buffer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="46" srcpinname="Buffer" dstnodeid="38" dstpinname="Specular 4D Buffer" linkstyle="VHV">
-   <LINKPOINT x="11265" y="16815">
-   </LINKPOINT>
-   <LINKPOINT x="5850" y="16815">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="DynamicBuffer (DX11.Buffer Color)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Color)" componentmode="Hidden" id="49">
    <BOUNDS type="Node" left="10095" top="16350" width="100" height="100">
    </BOUNDS>
@@ -416,12 +368,6 @@
    <PIN pinname="Data" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Buffer" dstnodeid="38" dstpinname="Diffuse 4D Buffer" linkstyle="VHV">
-   <LINKPOINT x="10095" y="16815">
-   </LINKPOINT>
-   <LINKPOINT x="5550" y="16815">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="24" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Whole Part" dstnodeid="26" dstpinname=".. To [">
@@ -610,10 +556,6 @@
    <LINKPOINT x="3795" y="11460">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="38" dstpinname="Geometry">
-   </LINK>
-   <LINK srcnodeid="98" srcpinname="Output" dstnodeid="38" dstpinname="IID">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="102" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="11205" top="3690" width="330" height="240">
    </BOUNDS>
@@ -670,12 +612,6 @@
    </LINK>
    <LINK srcnodeid="105" srcpinname="Buffer" dstnodeid="103" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="38" dstpinname="Transform Buffer" linkstyle="VHV">
-   <LINKPOINT x="4770" y="16830">
-   </LINKPOINT>
-   <LINKPOINT x="3690" y="16830">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="108">
    <BOUNDS type="Node" left="14670" top="8325" width="100" height="100">
    </BOUNDS>
@@ -723,7 +659,7 @@
    </PIN>
    <PIN pinname="Displacment Texture Array" visible="1">
    </PIN>
-   <PIN pinname="Strength Default" slicecount="1" values="0.56" visible="1">
+   <PIN pinname="Strength Default" slicecount="1" visible="1" values="0.56">
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="DisplacementByNormals">
    </PIN>
@@ -775,7 +711,7 @@
    <LINK srcnodeid="113" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Input">
    </LINK>
    <NODE systemname="Integrate (Differential)" nodename="Integrate (Differential)" componentmode="Hidden" id="114">
-   <BOUNDS type="Node" left="12405" top="6135" width="100" height="100">
+   <BOUNDS type="Node" left="13065" top="6150" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Position Out" visible="1">
    </PIN>
@@ -1305,7 +1241,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="-3.2" visible="1">
+   <PIN pinname="X" slicecount="1" visible="1" values="-3.2">
    </PIN>
    </NODE>
    <LINK srcnodeid="169" srcpinname="Transform Out" dstnodeid="108" dstpinname="Transform In">
@@ -1327,7 +1263,7 @@
    <LINK srcnodeid="170" srcpinname="Output" dstnodeid="159" dstpinname="X">
    </LINK>
    <NODE systemname="Chess_Grid_Geos" filename="Chess_Grid_Geos.v4p" nodename="Chess_Grid_Geos.v4p" componentmode="Hidden" id="171">
-   <BOUNDS type="Node" left="18090" top="10350" width="100" height="100">
+   <BOUNDS type="Node" left="17115" top="10275" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -1341,22 +1277,18 @@
    </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="172">
-   <BOUNDS type="Node" left="4110" top="17565" width="100" height="100">
+   <BOUNDS type="Node" left="2985" top="17610" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4110" top="17565" width="3000" height="3000">
+   <BOUNDS type="Box" left="2985" top="17610" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="Layer" dstnodeid="172" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="172" srcpinname="Layer Out" dstnodeid="3" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="171" srcpinname="Layer" dstnodeid="172" dstpinname="Layer 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="174">
    <BOUNDS type="Box" left="8985" top="180" width="795" height="240">
@@ -1452,8 +1384,6 @@
    </NODE>
    <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Evaluate">
    </LINK>
-   <LINK srcnodeid="93" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Enabled">
-   </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="180">
    <BOUNDS type="Node" left="16350" top="11040" width="100" height="100">
    </BOUNDS>
@@ -1465,8 +1395,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="93" srcpinname="Y Output Value" dstnodeid="180" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="180" srcpinname="Output" dstnodeid="38" dstpinname="Enabled">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="181">
    <BOUNDS type="Node" left="17250" top="10755" width="100" height="100">
@@ -1480,4 +1408,58 @@
    </LINK>
    <LINK srcnodeid="181" srcpinname="Output" dstnodeid="180" dstpinname="Input 2">
    </LINK>
+   <LINK srcnodeid="171" srcpinname="Layer" dstnodeid="172" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="GouraudDirectionalBuffered (DX11.Layer)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.Layer\GouraudDirectionalBuffered (DX11.Layer)\GouraudDirectionalBuffered (DX11.Layer).v4p" nodename="GouraudDirectionalBuffered (DX11.Layer)" componentmode="Hidden" id="182">
+   <BOUNDS type="Node" left="3165" top="17040" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Buffer" dstnodeid="182" dstpinname="Ambient 4D Buffer" linkstyle="VHV">
+   <LINKPOINT x="8925" y="16815">
+   </LINKPOINT>
+   <LINKPOINT x="5235" y="16815">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Buffer" dstnodeid="182" dstpinname="Specular 4D Buffer" linkstyle="VHV">
+   <LINKPOINT x="11265" y="16815">
+   </LINKPOINT>
+   <LINKPOINT x="5850" y="16815">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Buffer" dstnodeid="182" dstpinname="Diffuse 4D Buffer" linkstyle="VHV">
+   <LINKPOINT x="10095" y="16815">
+   </LINKPOINT>
+   <LINKPOINT x="5550" y="16815">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="182" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Output" dstnodeid="182" dstpinname="IID">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="182" dstpinname="Transform Buffer" linkstyle="VHV">
+   <LINKPOINT x="4770" y="16830">
+   </LINKPOINT>
+   <LINKPOINT x="3690" y="16830">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="182" srcpinname="Layer" dstnodeid="172" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="180" srcpinname="Output" dstnodeid="182" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="183">
+   <BOUNDS type="Node" left="18405" top="9480" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Y Output Value" dstnodeid="183" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="183" srcpinname="Output" dstnodeid="171" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="185">
+   <BOUNDS type="Node" left="16575" top="8730" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>
