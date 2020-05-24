@@ -50,7 +50,7 @@
    </PACK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="dx11" Version="1.3.1.1">
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
@@ -947,6 +947,8 @@
    </PIN>
    <PIN pinname="Destination Minimum" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="198" srcpinname="Output" dstnodeid="199" dstpinname="Input">
    </LINK>
@@ -1063,7 +1065,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="208">
-   <BOUNDS type="Node" left="9495" top="2220" width="100" height="100">
+   <BOUNDS type="Node" left="9435" top="2100" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1084,14 +1086,6 @@
    <PIN pinname="Scale" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="210">
-   <BOUNDS type="Node" left="10305" top="2730" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="209" srcpinname="Output" dstnodeid="210" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="209" srcpinname="Output" dstnodeid="206" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="208" srcpinname="Output" dstnodeid="209" dstpinname="Enabled">

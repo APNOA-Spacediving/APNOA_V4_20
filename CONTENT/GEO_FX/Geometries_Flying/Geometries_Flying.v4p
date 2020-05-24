@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" systemname="Geometries_Flying" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" scrollx="1695" scrolly="255">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" systemname="Geometries_Flying" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" scrollx="2475" scrolly="0">
    <BOUNDS type="Window" left="5040" top="-105" width="22125" height="18105">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
@@ -385,7 +385,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="72" dstpinname="Input 1">
@@ -422,6 +422,8 @@
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="92" srcpinname="Output" dstnodeid="18" dstpinname="Y Input Value">
@@ -849,7 +851,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="122" srcpinname="Output" dstnodeid="119" dstpinname="Input 1">
@@ -1025,7 +1027,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11370" top="5280" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="40">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="512">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1274,7 +1276,7 @@
    </LINK>
    <LINK srcnodeid="170" srcpinname="Output" dstnodeid="159" dstpinname="X">
    </LINK>
-   <NODE systemname="Chess_Grid_Geos" filename="Chess_Grid_Geos.v4p" nodename="Chess_Grid_Geos.v4p" componentmode="InAWindow" id="171">
+   <NODE systemname="Chess_Grid_Geos" filename="Chess_Grid_Geos.v4p" nodename="Chess_Grid_Geos.v4p" componentmode="Hidden" id="171">
    <BOUNDS type="Node" left="17115" top="10275" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -1487,6 +1489,8 @@
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="187">
    <BOUNDS type="Node" left="8670" top="3390" width="100" height="100">
@@ -1562,6 +1566,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="190" srcpinname="Y Output Value" dstnodeid="183" dstpinname="Input 2">
@@ -1704,8 +1710,6 @@
    </NODE>
    <LINK srcnodeid="175" srcpinname="Input Value" dstnodeid="199" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="199" srcpinname="Output" dstnodeid="171" dstpinname="UniformScaleStateWise">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="200">
    <BOUNDS type="Box" left="12240" top="1380" width="795" height="240">
    </BOUNDS>
@@ -1720,10 +1724,88 @@
    </NODE>
    <LINK srcnodeid="199" srcpinname="Output" dstnodeid="200" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="199" srcpinname="Output" dstnodeid="72" dstpinname="Input 3">
-   </LINK>
-   <LINK srcnodeid="199" srcpinname="Output" dstnodeid="119" dstpinname="Input 3">
-   </LINK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
+   <LINK srcnodeid="186" srcpinname="Down Edge" dstnodeid="92" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="202">
+   <BOUNDS type="Node" left="17805" top="8595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="199" srcpinname="Output" dstnodeid="202" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="202" srcpinname="Output" dstnodeid="171" dstpinname="UniformScaleStateWise">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="203">
+   <BOUNDS type="Node" left="21000" top="2850" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="193" srcpinname="Input Value" dstnodeid="203" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="204">
+   <BOUNDS type="Node" left="17190" top="9375" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="205">
+   <BOUNDS type="Node" left="17280" top="8835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="202" srcpinname="Output" dstnodeid="205" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="Output" dstnodeid="204" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="190" srcpinname="Y Output Value" dstnodeid="204" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="206">
+   <BOUNDS type="Box" left="14745" top="10215" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14745" top="10215" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="204" srcpinname="Output" dstnodeid="206" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="207">
+   <BOUNDS type="Node" left="14745" top="10785" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="SphereState4On">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="206" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Input Value">
+   </LINK>
    </PATCH>
