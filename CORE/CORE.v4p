@@ -81,6 +81,8 @@
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="Resolution">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="8">
    <BOUNDS type="Box" left="3990" top="2295" width="585" height="240">

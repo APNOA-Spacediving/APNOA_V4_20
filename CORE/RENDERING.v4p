@@ -126,6 +126,4 @@
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Evaluate">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Input Value" dstnodeid="5" dstpinname="Layer 2">
-   </LINK>
    </PATCH>
