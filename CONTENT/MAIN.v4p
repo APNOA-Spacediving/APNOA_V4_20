@@ -19,7 +19,7 @@
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
-   <PIN pinname="Evaluate" visible="1">
+   <PIN pinname="Evaluate" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="Hidden" id="1" nodename="..\CORE\CORE.v4p">
@@ -37,7 +37,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1515" top="780" width="4800" height="4800">
    </BOUNDS>
-   <BOUNDS type="Window" left="19800" top="0" width="9000" height="5925">
+   <BOUNDS type="Window" left="15315" top="1110" width="9000" height="5925">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">

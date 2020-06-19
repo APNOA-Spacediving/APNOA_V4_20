@@ -10,28 +10,6 @@
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="0">
-   <BOUNDS type="Node" left="1500" top="3960" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="3960" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="32355" top="2985" width="15660" height="13335">
-   </BOUNDS>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="AA Samples per Pixel" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
-   </PIN>
-   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
-   </PIN>
-   <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1">
    <BOUNDS type="Box" left="1680" top="2310" width="795" height="240">
    </BOUNDS>
@@ -66,10 +44,6 @@
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Input Value" dstnodeid="0" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Input Value" dstnodeid="0" dstpinname="Projection">
-   </LINK>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="1650" top="3045" width="100" height="100">
    </BOUNDS>
@@ -84,18 +58,6 @@
    </NODE>
    <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="5" dstpinname="Layer 1">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layers">
-   </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2640" top="2325" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="Perfmeter">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
@@ -104,26 +66,72 @@
    </PACK>
    <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
-   <BOUNDS type="Box" left="3660" top="1335" width="480" height="480">
+   <NODE systemname="Keyboard (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Desktop)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="4695" top="765" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="3660" top="1335" width="0" height="0">
+   <BOUNDS type="Box" left="4695" top="765" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Evaluate">
+   <PIN pinname="Device" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Evaluate">
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="4695" top="1680" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4695" top="1680" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Keyboard" visible="1">
+   </PIN>
+   <PIN pinname="Key Match" slicecount="1" values="F9">
+   </PIN>
+   <PIN pinname="F9" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Device" dstnodeid="9" dstpinname="Keyboard">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="4695" top="2025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="4695" top="2370" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="F9" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Up Edge" dstnodeid="11" dstpinname="Input">
+   </LINK>
+   <NODE systemname="PerfMeter (DX11.Debug)" filename="%VVVV%\packs\dx11\nodes\modules\PerfMeter (DX11.Debug).v4p" nodename="PerfMeter (DX11.Debug)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="3000" top="1290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="5" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="13" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="14">
+   <BOUNDS type="Node" left="1500" top="3960" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="3960" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="24030" top="0" width="26940" height="15180">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Input Value" dstnodeid="14" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Input Value" dstnodeid="14" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Layer Out" dstnodeid="14" dstpinname="Layers">
    </LINK>
    </PATCH>

@@ -43,7 +43,7 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Amount" visible="1" slicecount="1" values="1.53">
+   <PIN pinname="Amount" visible="1" slicecount="1" values="0.82">
    </PIN>
    <PIN pinname="Control" visible="1">
    </PIN>
@@ -85,7 +85,7 @@
    </PIN>
    <PIN pinname="Shape" visible="1" slicecount="1" values="0.1">
    </PIN>
-   <PIN pinname="Saturation" visible="1" slicecount="1" values="0.02">
+   <PIN pinname="Saturation" visible="1" slicecount="1" values="0.23">
    </PIN>
    <PIN pinname="Technique" visible="1" slicecount="1" values="UnsharpMask">
    </PIN>
@@ -173,7 +173,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4950" top="7335" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.8">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.9">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -343,7 +343,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="8" values="5.72,0.2,0.66,0.765,0.005,0.005,0,1">
+   <PIN pinname="Y Input Value" slicecount="8" values="5.72,0.2,4.88,0.23,12.81,0.005,5.96,8.61">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -377,7 +377,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7740" top="3420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="6">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -625,5 +625,7 @@
    <LINK srcnodeid="393" srcpinname="Y Output Value" dstnodeid="399" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="399" srcpinname="Output" dstnodeid="398" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="396" srcpinname="Input Value" dstnodeid="381" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
