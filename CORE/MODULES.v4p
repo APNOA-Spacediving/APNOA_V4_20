@@ -681,7 +681,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10470" top="3150" width="4800" height="4800">
    </BOUNDS>
-   <BOUNDS type="Window" left="5040" top="-105" width="22125" height="18105">
+   <BOUNDS type="Window" left="5775" top="4815" width="22125" height="18105">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
