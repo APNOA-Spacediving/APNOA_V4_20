@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" systemname="Geometries_Flying" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" scrollx="1890" scrolly="2205">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" systemname="Geometries_Flying" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" scrollx="900" scrolly="3300">
    <BOUNDS type="Window" left="5775" top="4815" width="22125" height="18105">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
@@ -1266,7 +1266,7 @@
    </LINK>
    <LINK srcnodeid="170" srcpinname="Output" dstnodeid="159" dstpinname="X">
    </LINK>
-   <NODE systemname="Chess_Grid_Geos" filename="Chess_Grid_Geos.v4p" nodename="Chess_Grid_Geos.v4p" componentmode="Hidden" id="171">
+   <NODE systemname="Chess_Grid_Geos" filename="Chess_Grid_Geos.v4p" nodename="Chess_Grid_Geos.v4p" componentmode="Hidden" id="171" debug="0">
    <BOUNDS type="Node" left="17115" top="10275" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -1879,5 +1879,31 @@
    <LINK srcnodeid="213" srcpinname="Output" dstnodeid="190" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="182" srcpinname="Layer" dstnodeid="172" dstpinname="Layer 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="216">
+   <BOUNDS type="Box" left="19350" top="11025" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="19350" top="11025" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="183" srcpinname="Output" dstnodeid="216" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="217">
+   <BOUNDS type="Node" left="19605" top="10425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="BigSphereIn">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="183" srcpinname="Output" dstnodeid="217" dstpinname="Input Value">
    </LINK>
    </PATCH>
