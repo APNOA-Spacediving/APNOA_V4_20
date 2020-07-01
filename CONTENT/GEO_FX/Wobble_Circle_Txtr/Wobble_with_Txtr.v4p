@@ -689,7 +689,7 @@
    </PIN>
    <PIN pinname="FrequencyBalance" slicecount="1" visible="1" values="-0.46">
    </PIN>
-   <PIN pinname="Amplitude" slicecount="1" values="-1.32">
+   <PIN pinname="Amplitude" slicecount="1" values="-2.05" visible="1">
    </PIN>
    <PIN pinname="RandomSeed" slicecount="1" visible="1" values="1.46">
    </PIN>
@@ -1131,7 +1131,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="0.5">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.9">
    </PIN>
    </NODE>
    <LINK srcnodeid="94" srcpinname="Output" dstnodeid="122" dstpinname="Input">
@@ -1223,7 +1223,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13650" top="6120" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.46">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.56">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1493,5 +1493,17 @@
    <LINK srcnodeid="147" srcpinname="Output" dstnodeid="146" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="124" srcpinname="Inverse Output" dstnodeid="147" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="148">
+   <BOUNDS type="Node" left="16170" top="4605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="-3.85">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Input Value" dstnodeid="148" dstpinname="Input 1">
    </LINK>
    </PATCH>

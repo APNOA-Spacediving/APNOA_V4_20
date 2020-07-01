@@ -127,9 +127,9 @@
    <LINK srcnodeid="21" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layer 3">
    </LINK>
    <NODE systemname="Evaluator" filename="Modules\Evaluator.v4p" componentmode="Hidden" id="22" nodename="Modules\Evaluator.v4p">
-   <BOUNDS type="Node" left="7140" top="3060" width="100" height="100">
+   <BOUNDS type="Node" left="7080" top="3135" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7140" top="3060" width="4800" height="4800">
+   <BOUNDS type="Box" left="7080" top="3135" width="4800" height="4800">
    </BOUNDS>
    <BOUNDS type="Window" left="18750" top="5730" width="2955" height="4440">
    </BOUNDS>
@@ -371,7 +371,7 @@
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="28" dstpinname="Evaluate">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="43">
-   <BOUNDS type="Node" left="7140" top="2655" width="100" height="100">
+   <BOUNDS type="Node" left="6930" top="2760" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -437,9 +437,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="43" dstpinname="Input 2" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="7220" y="1633">
+   <LINKPOINT x="7150" y="1668">
    </LINKPOINT>
-   <LINKPOINT x="7960" y="1833">
+   <LINKPOINT x="7820" y="1903">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="44" dstpinname="Input 2" linkstyle="VHV" hiddenwhenlocked="1">
@@ -931,7 +931,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="86">
-   <BOUNDS type="Node" left="7875" top="2535" width="100" height="100">
+   <BOUNDS type="Node" left="7545" top="2160" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -939,9 +939,9 @@
    </PIN>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="2">
+   <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="64" srcpinname="Output" dstnodeid="86" dstpinname="Input 1">
@@ -1095,9 +1095,9 @@
    <LINK srcnodeid="87" srcpinname="Output" dstnodeid="97" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="98">
-   <BOUNDS type="Box" left="8610" top="2700" width="480" height="480">
+   <BOUNDS type="Box" left="8880" top="2355" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8610" top="2700" width="0" height="0">
+   <BOUNDS type="Node" left="8880" top="2355" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1117,5 +1117,43 @@
    <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Input 3">
    </LINK>
    <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Input 4">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="99">
+   <BOUNDS type="Node" left="7890" top="1065" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Input Value" dstnodeid="99" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="7905" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="100" dstpinname="Input">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="101">
+   <BOUNDS type="Node" left="8100" top="1965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Time" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100" srcpinname="Up Edge" dstnodeid="101" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Inverse Output" dstnodeid="86" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Output" dstnodeid="43" dstpinname="Input 1">
    </LINK>
    </PATCH>
