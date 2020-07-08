@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" systemname="Geometries_Flying" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" scrollx="450" scrolly="1725">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" systemname="Geometries_Flying" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Geometries_Flying.v4p" scrollx="0" scrolly="4275">
    <BOUNDS type="Window" left="5775" top="4815" width="22125" height="18105">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
@@ -563,9 +563,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="102" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11205" top="3690" width="330" height="240">
+   <BOUNDS type="Box" left="14865" top="3570" width="330" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11205" top="3690" width="0" height="0">
+   <BOUNDS type="Node" left="14865" top="3570" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
@@ -1423,6 +1423,8 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
+   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="44" srcpinname="Buffer" dstnodeid="182" dstpinname="Ambient 4D Buffer" linkstyle="VHV">
    <LINKPOINT x="8925" y="16815">
@@ -1441,8 +1443,6 @@
    </LINKPOINT>
    <LINKPOINT x="5550" y="16815">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="182" dstpinname="Geometry">
    </LINK>
    <LINK srcnodeid="98" srcpinname="Output" dstnodeid="182" dstpinname="IID">
    </LINK>
@@ -1880,8 +1880,6 @@
    </LINK>
    <LINK srcnodeid="213" srcpinname="Output" dstnodeid="190" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="182" srcpinname="Layer" dstnodeid="172" dstpinname="Layer 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="216">
    <BOUNDS type="Box" left="19350" top="11025" width="480" height="480">
    </BOUNDS>
@@ -1927,5 +1925,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="218" srcpinname="Y Output Value" dstnodeid="5" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="182" srcpinname="Layer" dstnodeid="172" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="182" dstpinname="Geometry">
    </LINK>
    </PATCH>
