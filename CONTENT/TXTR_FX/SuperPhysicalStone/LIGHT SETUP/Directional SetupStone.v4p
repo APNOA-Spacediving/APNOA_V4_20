@@ -85,7 +85,7 @@
    </PIN>
    <PIN pinname="Sticky Slider" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0.49">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0.51">
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
    </PIN>
@@ -637,7 +637,7 @@
    </PIN>
    <PIN pinname="Saturation" slicecount="1" visible="1" values="-0.64">
    </PIN>
-   <PIN pinname="Hue" slicecount="1" values="0.5">
+   <PIN pinname="Hue" slicecount="1" values="0.04">
    </PIN>
    <PIN pinname="Value" slicecount="1" visible="1" values="0.38">
    </PIN>
@@ -649,7 +649,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7905" top="2445" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.38">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.82">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -663,7 +663,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8970" top="2430" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.38">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.64">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
