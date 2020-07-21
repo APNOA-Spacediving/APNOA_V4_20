@@ -909,7 +909,7 @@
    <LINK srcnodeid="150" srcpinname="Texture Out" dstnodeid="119" dstpinname="Texture">
    </LINK>
    <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="151">
-   <BOUNDS type="Node" left="12750" top="14490" width="100" height="100">
+   <BOUNDS type="Node" left="11265" top="14010" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -921,7 +921,7 @@
    <LINK srcnodeid="151" srcpinname="Output" dstnodeid="148" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="152">
-   <BOUNDS type="Node" left="12660" top="12420" width="100" height="100">
+   <BOUNDS type="Node" left="11175" top="11940" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Change" visible="1">
    </PIN>
