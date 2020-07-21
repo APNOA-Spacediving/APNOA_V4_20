@@ -35,7 +35,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2880" top="2520" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\..\..\_APNOA_20_Assets\3D-Models\Architecture\82-obj\obj\Residential Buildings 003.obj|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\..\..\APNOA_V4_Assets\3D Models\Architecture\obj\Residential Buildings 005.obj|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -119,7 +119,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3390" top="3405" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="256">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="512">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -194,12 +194,16 @@
    </PACK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <PACK Name="vvvv-ZeroMQ" Version="0.5.3">
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.6">
+   <PACK Name="dx11.particles" Version="1.0.7">
+   </PACK>
+   <PACK Name="VVVV.Packs.Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="Watchdog" Version="1.0.0">
    </PACK>
    </PATCH>
