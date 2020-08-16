@@ -35,7 +35,7 @@
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="50">
    <BOUNDS type="Node" left="6330" top="1530" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="..\..\..\assets\ibl\studio\output_irrad.dds" visible="1">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\..\assets\ibl\studio\output_irrad.dds">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -97,7 +97,7 @@
    </BOUNDS>
    <PIN pinname="Color" visible="1">
    </PIN>
-   <PIN pinname="Scalar" slicecount="1" values="1.75">
+   <PIN pinname="Scalar" slicecount="1" values="1.64">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -161,7 +161,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5520" top="645" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.55">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -175,7 +175,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4650" top="1395" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.44">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -226,7 +226,7 @@
    </NODE>
    <LINK srcnodeid="230" srcpinname="Y Output Value" dstnodeid="229" dstpinname="Enabled">
    </LINK>
-   <PACK Name="dx11.particles" Version="1.0.6">
+   <PACK Name="dx11.particles" Version="1.0.7">
    </PACK>
    <NODE id="232" systemname="LightSetup (SuperPhysical Light)" filename="%VVVV%\packs\SuperPhysical\nodes\vl\VVVV.Value.SuperPhysical.vl" nodename="LightSetup (SuperPhysical Light)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="630" top="4995" width="5280" height="270">
@@ -332,12 +332,6 @@
    <PIN pinname="PointLightsFWP" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="182" srcpinname="SpotLights" dstnodeid="232" dstpinname="PointLightSettings">
-   </LINK>
-   <LINK srcnodeid="183" srcpinname="DirectionalLights" dstnodeid="232" dstpinname="DirectionalLightSettings">
-   </LINK>
-   <LINK srcnodeid="185" srcpinname="SpotLights" dstnodeid="232" dstpinname="SpotLightSettings">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="235">
    <BOUNDS type="Box" left="6885" top="705" width="9420" height="240">
    </BOUNDS>
@@ -355,5 +349,11 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="235" srcpinname="Output String" dstnodeid="50" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="183" srcpinname="DirectionalLights" dstnodeid="232" dstpinname="DirectionalLightSettings">
+   </LINK>
+   <LINK srcnodeid="185" srcpinname="SpotLights" dstnodeid="232" dstpinname="SpotLightSettings">
+   </LINK>
+   <LINK srcnodeid="182" srcpinname="SpotLights" dstnodeid="232" dstpinname="PointLightSettings">
    </LINK>
    </PATCH>

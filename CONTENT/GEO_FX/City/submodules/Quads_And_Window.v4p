@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\City\submodules\Quads_And_Window.v4p" systemname="Quads_And_Window" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\City\submodules\Quads_And_Window.v4p" scrollx="7680" scrolly="0">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\City\submodules\Quads_And_Window.v4p" systemname="Quads_And_Window" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\City\submodules\Quads_And_Window.v4p" scrollx="3720" scrolly="225">
    <BOUNDS type="Window" left="11625" top="2580" width="15930" height="10770">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
@@ -235,7 +235,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.14" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.14">
    </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="30" dstpinname="Input 1">
@@ -249,7 +249,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.28" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.28">
    </PIN>
    </NODE>
    <LINK srcnodeid="35" srcpinname="Output" dstnodeid="29" dstpinname="Input 1">
@@ -326,6 +326,8 @@
    <PIN pinname="Layer 3" visible="1">
    </PIN>
    <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 1">
@@ -503,7 +505,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.26" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.26">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="10" dstpinname="Input 1">
@@ -517,7 +519,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.62" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.62">
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="9" dstpinname="Input 1">
@@ -879,7 +881,7 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Factor" slicecount="1" values="0.93" visible="1">
+   <PIN pinname="Factor" slicecount="1" visible="1" values="0.93">
    </PIN>
    </NODE>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="52" dstpinname="Input 1">
@@ -895,7 +897,7 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Threshold" slicecount="1" values="7.05" visible="1">
+   <PIN pinname="Threshold" slicecount="1" visible="1" values="7.05">
    </PIN>
    </NODE>
    <LINK srcnodeid="50" srcpinname="Texture Out" dstnodeid="49" dstpinname="Texture In">
@@ -989,6 +991,8 @@
    </PIN>
    <PIN pinname="Color" visible="1">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="70" srcpinname="Geometry Out" dstnodeid="71" dstpinname="Geometry">
    </LINK>
@@ -1067,7 +1071,7 @@
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="0.37">
    </PIN>
-   <PIN pinname="Hue" slicecount="1" values="0.54" visible="1">
+   <PIN pinname="Hue" slicecount="1" visible="1" values="0.54">
    </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Output" dstnodeid="71" dstpinname="Color">
@@ -1165,7 +1169,7 @@
    </BOUNDS>
    <PIN pinname="Switch" visible="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="0.25" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="0.25">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="0.75">
    </PIN>
@@ -1285,7 +1289,7 @@
    </BOUNDS>
    <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="0.53" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="0.53">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="0.29">
    </PIN>
@@ -1309,7 +1313,7 @@
    </BOUNDS>
    <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="0.061" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="0.061">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="0.44">
    </PIN>
@@ -1361,7 +1365,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.71" visible="1">
+   <PIN pinname="Alpha" slicecount="1" visible="1" values="0.71">
    </PIN>
    </NODE>
    <LINK srcnodeid="101" srcpinname="Output" dstnodeid="64" dstpinname="Color">
@@ -1595,5 +1599,43 @@
    <LINK srcnodeid="111" srcpinname="Cycles" dstnodeid="119" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="119" srcpinname="Output" dstnodeid="118" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="120">
+   <BOUNDS type="Box" left="16380" top="7695" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16380" top="7695" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="120" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="121">
+   <BOUNDS type="Box" left="20265" top="7230" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20265" top="7230" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="71" dstpinname="Enabled">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\TXTR_FX\SuperPhysicalCity\SuperPhysical-InstancedCity.v4p" systemname="SuperPhysical - InstancedStone" filename="D:\APNOA_V4_20\CONTENT\TXTR_FX\SuperPhysicalStone\SuperPhysical - InstancedStone.v4p" scrollx="0" scrolly="1200">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\TXTR_FX\SuperPhysicalCity\SuperPhysical-InstancedCity.v4p" systemname="SuperPhysical - InstancedStone" filename="D:\APNOA_V4_20\CONTENT\TXTR_FX\SuperPhysicalStone\SuperPhysical - InstancedStone.v4p" scrollx="0" scrolly="900">
    <BOUNDS type="Window" left="2775" top="3135" width="21900" height="15435">
    </BOUNDS>
    <NODE id="41" systemname="Renderer (DX11 TempTarget)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11 TempTarget)" componentmode="InAWindow" stayontop="0">
@@ -989,7 +989,7 @@
    </PIN>
    <PIN pinname="Hue" slicecount="1" values="0.56">
    </PIN>
-   <PIN pinname="Value" slicecount="1" values="0.3">
+   <PIN pinname="Value" slicecount="1" values="0.72">
    </PIN>
    </NODE>
    <NODE systemname="Cons (Color)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Color)" componentmode="Hidden" id="201">
@@ -1031,7 +1031,7 @@
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="-0.95">
+   <PIN pinname="Input 2" slicecount="1" values="-0.83">
    </PIN>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="204">
@@ -1043,7 +1043,7 @@
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.01">
+   <PIN pinname="Input 2" slicecount="1" values="0.08">
    </PIN>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="205">
@@ -1065,7 +1065,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="18510" top="7425" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="17.28">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.62">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

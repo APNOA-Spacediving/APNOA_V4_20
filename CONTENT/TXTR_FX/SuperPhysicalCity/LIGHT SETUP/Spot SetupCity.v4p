@@ -27,7 +27,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.44,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.44,0.01">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>
@@ -115,7 +115,7 @@
    </PIN>
    <PIN pinname="Sticky Slider" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.21">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.3">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0.15">
    </PIN>
@@ -157,7 +157,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.16">
+   <PIN pinname="Y Input Value" slicecount="1" values="3.35">
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
    </PIN>
@@ -221,7 +221,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3540" top="3975" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.67">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4.13">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Range">
    </PIN>
@@ -706,7 +706,7 @@
    </LINK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.6">
+   <PACK Name="dx11.particles" Version="1.0.7">
    </PACK>
    <LINK srcnodeid="45" srcpinname="Output Node" dstnodeid="309" dstpinname="Texture In">
    </LINK>
