@@ -127,6 +127,16 @@
    </BOUNDS>
    <BOUNDS type="Window" left="24030" top="0" width="26940" height="15180">
    </BOUNDS>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="Buffer Count" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Refresh Rate" slicecount="1" values="60">
+   </PIN>
+   <PIN pinname="Flip Sequential" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Input Value" dstnodeid="14" dstpinname="View">
    </LINK>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_Creto.v4p" scrollx="0" scrolly="10020" systemname="SplineBuffered_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_Creto.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_Creto.v4p" scrollx="0" scrolly="0" systemname="SplineBuffered_Creto" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Spline_Buffered\SplineBuffered_Creto.v4p">
    <BOUNDS type="Window" left="6045" top="615" width="18885" height="18300">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
@@ -52,7 +52,7 @@
    </PACK>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <PACK Name="VVVV.Packs.Image" Version="0.2.0">
    </PACK>
@@ -207,8 +207,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="36" dstpinname="Layer In">
-   </LINK>
-   <LINK srcnodeid="36" srcpinname="Layer Out" dstnodeid="62" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="124">
    <BOUNDS type="Node" left="4815" top="11235" width="100" height="100">
@@ -600,14 +598,6 @@
    </LINK>
    <LINK srcnodeid="170" srcpinname="Y Output Value" dstnodeid="172" dstpinname="Z">
    </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="173">
-   <BOUNDS type="Node" left="5055" top="17340" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="CameraPosition">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="174" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="16005" top="9660" width="795" height="240">
    </BOUNDS>
@@ -794,6 +784,8 @@
    <PIN pinname="Color Indexing" slicecount="1" values="Instance">
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="102" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Enabled">
@@ -1161,5 +1153,7 @@
    <LINK srcnodeid="217" srcpinname="Geometry Out" dstnodeid="191" dstpinname="Geometry">
    </LINK>
    <LINK srcnodeid="189" srcpinname="Render State" dstnodeid="191" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Layer Out" dstnodeid="62" dstpinname="Input Node">
    </LINK>
    </PATCH>

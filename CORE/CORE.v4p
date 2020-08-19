@@ -6,7 +6,7 @@
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -93,7 +93,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3990" top="2295" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="1">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="4">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="1">
    </PIN>

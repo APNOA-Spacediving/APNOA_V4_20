@@ -6,7 +6,7 @@
    </PACK>
    <PACK Name="dx11-vvvv-girlpower" Version="33.0">
    </PACK>
-   <PACK Name="dx11.particles" Version="1.0.7">
+   <PACK Name="dx11.particles" Version="1.0.6">
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -22,7 +22,7 @@
    <PIN pinname="Evaluate" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="Hidden" id="1" nodename="..\CORE\CORE.v4p">
+   <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="InAWindow" id="1" nodename="..\CORE\CORE.v4p">
    <BOUNDS type="Node" left="1515" top="1785" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1515" top="1785" width="4800" height="4800">
@@ -42,7 +42,7 @@
    </NODE>
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">
    </LINK>
-   <NODE systemname="CONTROLLER" filename="..\CORE\CONTROLLER.v4p" componentmode="Hidden" id="3" nodename="..\CORE\CONTROLLER.v4p">
+   <NODE systemname="CONTROLLER" filename="..\CORE\CONTROLLER.v4p" componentmode="InAWindow" id="3" nodename="..\CORE\CONTROLLER.v4p">
    <BOUNDS type="Node" left="1515" top="1275" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1515" top="1275" width="4800" height="4800">
