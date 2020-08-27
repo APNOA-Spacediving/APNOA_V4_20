@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Wobble_Circle_Txtr\Wobble_with_Txtr.v4p" scrollx="480" scrolly="0" systemname="Wobble_with_Txtr" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Wobble_Circle_Txtr\Wobble_with_Txtr.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Wobble_Circle_Txtr\Wobble_with_Txtr.v4p" scrollx="480" scrolly="15" systemname="Wobble_with_Txtr" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Wobble_Circle_Txtr\Wobble_with_Txtr.v4p">
    <BOUNDS type="Window" left="1815" top="3195" width="19875" height="15810">
    </BOUNDS>
    <NODE systemname="IID (DX11.GeomFX)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.GeomFX\IID (DX11.GeomFX)\IID (DX11.GeomFX).v4p" nodename="IID (DX11.GeomFX)" componentmode="Hidden" id="1">
@@ -217,7 +217,7 @@
    </PIN>
    <PIN pinname="ScaleX" slicecount="1" visible="1" values="4.99">
    </PIN>
-   <PIN pinname="TranslateZ" slicecount="1" values="-0.18" visible="1">
+   <PIN pinname="TranslateZ" slicecount="1" visible="1" values="-0.18">
    </PIN>
    <PIN pinname="ScaleY" visible="1">
    </PIN>
@@ -777,7 +777,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" visible="1" values="2.03">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1829,8 +1829,6 @@
    <LINK srcnodeid="98" srcpinname="Output" dstnodeid="176" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="176" srcpinname="Output" dstnodeid="15" dstpinname="TranslateZ">
-   </LINK>
-   <LINK srcnodeid="172" srcpinname="Output" dstnodeid="95" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="171" srcpinname="Output" dstnodeid="172" dstpinname="Input 2">
    </LINK>
