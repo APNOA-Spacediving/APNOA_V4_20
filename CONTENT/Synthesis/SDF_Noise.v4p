@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\Synthesis\SDF_Noise.v4p" systemname="SDF_Noise" filename="D:\APNOA_V4_20\CONTENT\Synthesis\SDF_Noise.v4p" scrollx="75" scrolly="0">
-   <BOUNDS type="Window" left="14175" top="7770" width="11715" height="12570">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\Synthesis\SDF_Noise.v4p" systemname="SDF_Noise" filename="D:\APNOA_V4_20\CONTENT\Synthesis\SDF_Noise.v4p" scrollx="975" scrolly="15">
+   <BOUNDS type="Window" left="23775" top="3540" width="11715" height="12570">
    </BOUNDS>
    <NODE systemname="CombineSDF (SF3D.Operators)" filename="%VVVV%\packs\FieldTrip\nodes\modules\SF3D\Operators\CombineSDF (SF3D.Operators).v4p" nodename="CombineSDF (SF3D.Operators)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="2190" top="5115" width="100" height="100">
@@ -65,7 +65,7 @@
    </PIN>
    <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
    </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.01112,0.01112,0.01112,1.00000|">
+   <PIN pinname="Background Color" slicecount="1" values="|0.09451,0.09451,0.09451,1.00000|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
@@ -111,7 +111,7 @@
    </PIN>
    <PIN pinname="Frequency" slicecount="1" visible="1" values="4.08">
    </PIN>
-   <PIN pinname="Shape" slicecount="1" values="0.871" visible="1">
+   <PIN pinname="Shape" slicecount="1" visible="1" values="0.871">
    </PIN>
    <PIN pinname="Center" slicecount="1" values="0">
    </PIN>
@@ -229,7 +229,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10500" top="3555" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="1.04,0.73,0.84">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.72,0.88,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -311,13 +311,11 @@
    </PIN>
    <PIN pinname="SDF Function " visible="1">
    </PIN>
-   <PIN pinname="Radius" slicecount="1" values="0.028" visible="1">
+   <PIN pinname="Radius" slicecount="1" visible="1" values="0.028">
    </PIN>
-   <PIN pinname="Epsilon" slicecount="1" values="0.702" visible="1">
+   <PIN pinname="Epsilon" slicecount="1" visible="1" values="0.702">
    </PIN>
    </NODE>
-   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="13" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="23" dstpinname="SDF Function ">
    </LINK>
    <NODE systemname="BoxSDF (SF3D.Sources)" filename="%VVVV%\packs\FieldTrip\nodes\modules\SF3D\Sources\BoxSDF (SF3D.Sources).v4p" nodename="BoxSDF (SF3D.Sources)" componentmode="Hidden" id="24">
@@ -337,7 +335,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2625" top="2490" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="2.99,4.13,1.98">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.93,0.89,6.41">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -379,9 +377,9 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="7.31">
+   <PIN pinname="Width" slicecount="1" values="3.96">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="0.56">
+   <PIN pinname="Input" slicecount="1" values="0.33">
    </PIN>
    <PIN pinname="Random Seed" slicecount="1" visible="1" values="16">
    </PIN>
@@ -411,7 +409,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="2.32">
+   <PIN pinname="Width" slicecount="1" values="1.37">
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0.34">
    </PIN>
@@ -429,7 +427,7 @@
    </PIN>
    <PIN pinname="Y" slicecount="1" visible="1" values="5.26">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="0" visible="1">
+   <PIN pinname="X" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="XYZ" dstnodeid="22" dstpinname="Y Input Value">
@@ -499,7 +497,7 @@
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="5520" top="1575" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Scale" slicecount="1" values="20">
+   <PIN pinname="Scale" slicecount="1" values="15">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -739,5 +737,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="67" srcpinname="Position Out" dstnodeid="73" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="13" dstpinname="Input Node">
    </LINK>
    </PATCH>
