@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" scrollx="390" scrolly="0" systemname="Chess_Grid_II_180822" filename="C:\Users\tobi\Documents\VVVV\V4_TOA\_patches\Content\06_Rasters\Chess_Grid_II_180822.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\ChessGrid\Chess_Grid.v4p" scrollx="60" scrolly="10140" systemname="Chess_Grid_II_180822" filename="C:\Users\tobi\Documents\VVVV\V4_TOA\_patches\Content\06_Rasters\Chess_Grid_II_180822.v4p">
    <BOUNDS type="Window" left="1965" top="8220" width="20595" height="18105">
    </BOUNDS>
    <NODE systemname="DynamicBuffer (DX11.Buffer Transform)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Transform)" componentmode="Hidden" id="13">
@@ -37,7 +37,7 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="1" visible="1">
+   <PIN pinname="Y" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="X" slicecount="1" values="1">
    </PIN>
@@ -177,7 +177,7 @@
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="Centered">
    </PIN>
-   <PIN pinname="Phase" slicecount="1" values="0" visible="1">
+   <PIN pinname="Phase" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="41" dstpinname="Y In">
@@ -405,7 +405,7 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="2">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="6.7" visible="1">
+   <PIN pinname="Width" slicecount="1" visible="1" values="6.7">
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0">
    </PIN>
@@ -857,7 +857,7 @@
    </PIN>
    <PIN pinname="Axis Default XYZ" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" values="DisplacementByAxis">
+   <PIN pinname="Technique" slicecount="1" values="DisplacementByNormals">
    </PIN>
    <PIN pinname="Axis Indexing" slicecount="1" values="Primitive">
    </PIN>
@@ -941,7 +941,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7815" top="15630" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="16">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -959,7 +959,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10410" top="17685" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.24">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.53">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1047,7 +1047,7 @@
    <LINK srcnodeid="359" srcpinname="Y Output Value" dstnodeid="349" dstpinname="Axis Default XYZ">
    </LINK>
    <NODE systemname="Echo (DX11.Texture 2d)" filename="%VVVV%\packs\dx11-vvvv-girlpower\nodes\modules\Echo\Echo (DX11.Texture 2d).v4p" nodename="Echo (DX11.Texture 2d)" componentmode="Hidden" id="360">
-   <BOUNDS type="Node" left="9450" top="16260" width="100" height="100">
+   <BOUNDS type="Node" left="8850" top="16590" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
@@ -1882,18 +1882,6 @@
    </LINK>
    <LINK srcnodeid="433" srcpinname="Y Out" dstnodeid="431" dstpinname="Go To Position">
    </LINK>
-   <NODE systemname="Cons (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Cons (DX11.Texture 2d)" componentmode="Hidden" id="434">
-   <BOUNDS type="Node" left="9585" top="17130" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9585" top="17130" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="360" srcpinname="Texture Out" dstnodeid="434" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="360" srcpinname="Texture Out" dstnodeid="349" dstpinname="Displacment Texture Array">
    </LINK>
    <LINK srcnodeid="360" srcpinname="Texture Out" dstnodeid="352" dstpinname="Texture Array">
@@ -2160,8 +2148,6 @@
    </LINK>
    <LINK srcnodeid="455" srcpinname="Output" dstnodeid="452" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="452" srcpinname="Output 1" dstnodeid="354" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="452" srcpinname="Output 2" dstnodeid="446" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="456">
@@ -2173,8 +2159,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="456" srcpinname="Input Value" dstnodeid="317" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="80" srcpinname="Layer" dstnodeid="353" dstpinname="Layer 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="457">
    <BOUNDS type="Box" left="7605" top="7065" width="795" height="240">
@@ -2197,7 +2181,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9495" top="7305" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.64">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2209,5 +2193,7 @@
    <LINK srcnodeid="458" srcpinname="Y Output Value" dstnodeid="348" dstpinname="ScaleX">
    </LINK>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="7" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Layer" dstnodeid="353" dstpinname="Layer 1">
    </LINK>
    </PATCH>
