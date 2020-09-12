@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\ClapQuads\ClapQuads.v4p" systemname="ClapQuads" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\ClapQuads\ClapQuads.v4p" scrollx="0" scrolly="10545">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\ClapQuads\ClapQuads.v4p" systemname="ClapQuads" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\ClapQuads\ClapQuads.v4p" scrollx="15" scrolly="6195">
    <BOUNDS type="Window" left="6180" top="270" width="16680" height="18540">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
@@ -1513,7 +1513,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10305" top="13605" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1525,7 +1525,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="198" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Y Input Value">
@@ -1557,7 +1557,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13935" top="13815" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1567,7 +1567,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="201" srcpinname="Y Output Value" dstnodeid="165" dstpinname="Enabled">
@@ -1595,8 +1595,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="202" srcpinname="Output" dstnodeid="203" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="203" srcpinname="Output" dstnodeid="201" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="204">
    <BOUNDS type="Node" left="11925" top="12765" width="100" height="100">
@@ -1669,8 +1667,6 @@
    <LINK srcnodeid="207" srcpinname="Input Value" dstnodeid="208" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="206" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="198" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="198" srcpinname="Y Output Value" dstnodeid="206" dstpinname="Y Input Value">
    </LINK>
