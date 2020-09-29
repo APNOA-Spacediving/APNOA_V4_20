@@ -22,12 +22,12 @@
    <PIN pinname="Evaluate" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="InAWindow" id="1" nodename="..\CORE\CORE.v4p">
+   <NODE systemname="CORE" filename="..\CORE\CORE.v4p" componentmode="Hidden" id="1" nodename="..\CORE\CORE.v4p">
    <BOUNDS type="Node" left="1515" top="1785" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1515" top="1785" width="4800" height="4800">
    </BOUNDS>
-   <BOUNDS type="Window" left="5160" top="7980" width="10140" height="6540">
+   <BOUNDS type="Window" left="5130" top="3765" width="10140" height="6540">
    </BOUNDS>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>

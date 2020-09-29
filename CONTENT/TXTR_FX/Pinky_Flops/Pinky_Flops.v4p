@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
    <PATCH nodename="D:\APNOA_V4_20\CONTENT\TXTR_FX\Pinky_Flops\Pinky_Flops.v4p" scrollx="0" scrolly="0" systemname="Pinky_Flops" filename="D:\APNOA_V4\CONTENT\TXTR_FX\Pinky_Flops\Pinky_Flops.v4p">
-   <BOUNDS type="Window" left="8160" top="270" width="12225" height="15660">
+   <BOUNDS type="Window" left="8130" top="270" width="12255" height="15660">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -63,7 +63,7 @@
    <LINK srcnodeid="329" srcpinname="Output Node" dstnodeid="326" dstpinname="Texture In">
    </LINK>
    <NODE systemname="NormalMap (DX11.TextureFX)" filename="%VVVV%\packs\dx11-vvvv-girlpower\nodes\texture11\Filter\NormalMap.tfx" nodename="NormalMap (DX11.TextureFX)" componentmode="Hidden" id="324">
-   <BOUNDS type="Node" left="3773" top="5599" width="100" height="100">
+   <BOUNDS type="Node" left="3668" top="5719" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
@@ -117,13 +117,13 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Echo (DX11.Texture 2d)" filename="%VVVV%\packs\dx11-vvvv-girlpower\nodes\modules\Echo\Echo (DX11.Texture 2d).v4p" nodename="Echo (DX11.Texture 2d)" componentmode="Hidden" id="352">
-   <BOUNDS type="Node" left="3810" top="6135" width="100" height="100">
+   <BOUNDS type="Node" left="3585" top="6135" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Fade" slicecount="1" values="0.986">
+   <PIN pinname="Fade" slicecount="1" values="0.82">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="353" systemname="IOBox (Value Advanced)">
@@ -297,7 +297,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="8">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="16" values="0.05,0.235,-0.003,0.181,-0.122,0,0.04,0.237,-0.807,0.96,0.111,0.3,0.005,0.005,0,1">
+   <PIN pinname="Y Input Value" slicecount="16" values="0.05,0.235,0.55,0.69,-0.199,-0.72,-0.08,-0.35,0.39,1.312,0.111,0.52,0.005,0.005,0,1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -351,7 +351,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="8">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="16" values="5.72,0.2,1.03,0,12.81,0.005,5.96,6.86,5.72,0.2,1.03,2,1.95,0.005,5.96,8.61">
+   <PIN pinname="Y Input Value" slicecount="16" values="5.72,0.2,1,-10.25,2.02,0.005,5.96,4.11,1.49,1.03,3.81,2,1.95,0.005,5.96,8.61">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -443,7 +443,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="8">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="16" values="0.55,0.1,0.62,6.53,0.55,0.1,0,1,0.55,0.1,0.62,6.53,0.55,0.1,0,1">
+   <PIN pinname="Y Input Value" slicecount="16" values="0.55,0.1,0.26,12.692,0.55,0.1,0,1,0.55,0.1,0.62,6.53,0.55,0.1,0,1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -763,7 +763,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="2.71">
+   <PIN pinname="Input 2" slicecount="1" values="0.94" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -909,7 +909,7 @@
    </BOUNDS>
    <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="3.52">
    </PIN>
    <PIN pinname="Input 1" slicecount="1" values="1">
    </PIN>
@@ -929,8 +929,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="418" srcpinname="Input Value" dstnodeid="420" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="420" srcpinname="Output" dstnodeid="419" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="419" srcpinname="Output" dstnodeid="358" dstpinname="Input 4">
    </LINK>
@@ -1159,9 +1157,9 @@
    <LINK srcnodeid="436" srcpinname="Position Out" dstnodeid="405" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="437">
-   <BOUNDS type="Box" left="345" top="11490" width="795" height="480">
+   <BOUNDS type="Box" left="720" top="11250" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="345" top="11490" width="0" height="0">
+   <BOUNDS type="Node" left="720" top="11250" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1920,1080">
    </PIN>
@@ -1221,5 +1219,37 @@
    <LINK srcnodeid="438" srcpinname="Y Output Value" dstnodeid="406" dstpinname="Use Default Size">
    </LINK>
    <LINK srcnodeid="438" srcpinname="Y Output Value" dstnodeid="326" dstpinname="Use Default Size">
+   </LINK>
+   <LINK srcnodeid="420" srcpinname="Output" dstnodeid="419" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="439">
+   <BOUNDS type="Node" left="7530" top="6075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="440">
+   <BOUNDS type="Node" left="9405" top="4110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="440" srcpinname="Change" dstnodeid="439" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="441">
+   <BOUNDS type="Node" left="7305" top="6495" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="439" srcpinname="Output" dstnodeid="441" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="441" srcpinname="Position Out" dstnodeid="409" dstpinname="Input 2">
    </LINK>
    </PATCH>
