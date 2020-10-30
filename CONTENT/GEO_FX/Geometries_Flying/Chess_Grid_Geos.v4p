@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Chess_Grid_Geos.v4p" scrollx="9885" scrolly="5790" systemname="Chess_Grid_Geos" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Chess_Grid_Geos.v4p">
-   <BOUNDS type="Window" left="1605" top="285" width="19875" height="18105">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Chess_Grid_Geos.v4p" scrollx="9405" scrolly="3015" systemname="Chess_Grid_Geos" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Geometries_Flying\Chess_Grid_Geos.v4p">
+   <BOUNDS type="Window" left="2370" top="1020" width="19875" height="18105">
    </BOUNDS>
    <NODE systemname="DynamicBuffer (DX11.Buffer Transform)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Transform)" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="3795" top="7605" width="100" height="100">
@@ -621,9 +621,9 @@
    </PIN>
    </NODE>
    <NODE systemname="DynamicBuffer (DX11.Buffer Transform)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer Transform)" componentmode="Hidden" id="356">
-   <BOUNDS type="Node" left="21405" top="16875" width="100" height="100">
+   <BOUNDS type="Node" left="20445" top="16980" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="21405" top="16875" width="3000" height="3000">
+   <BOUNDS type="Box" left="20445" top="16980" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Buffer" visible="1">
    </PIN>
@@ -1209,7 +1209,7 @@
    </BOUNDS>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="Position In" slicecount="1" values="0.022" visible="1">
+   <PIN pinname="Position In" slicecount="1" visible="1" values="0.022">
    </PIN>
    </NODE>
    <LINK srcnodeid="442" srcpinname="Position Out" dstnodeid="441" dstpinname="Y">
@@ -1489,9 +1489,9 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Transform)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetSlice (Transform)" componentmode="Hidden" id="475">
-   <BOUNDS type="Node" left="20595" top="18285" width="100" height="100">
+   <BOUNDS type="Node" left="21660" top="17700" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="20595" top="18285" width="3000" height="3000">
+   <BOUNDS type="Box" left="21660" top="17700" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1553,7 +1553,7 @@
    <LINK srcnodeid="475" srcpinname="Output" dstnodeid="446" dstpinname="Transform In">
    </LINK>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="479">
-   <BOUNDS type="Node" left="20625" top="17685" width="100" height="100">
+   <BOUNDS type="Node" left="21660" top="16995" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -1911,8 +1911,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="481" srcpinname="Y Output Value" dstnodeid="504" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="504" srcpinname="Output" dstnodeid="446" dstpinname="Enabled">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="505">
    <BOUNDS type="Node" left="18120" top="20670" width="100" height="100">
@@ -2997,7 +2995,7 @@
    </BOUNDS>
    <PIN pinname="X" slicecount="1" values="2.077">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="3.8" visible="1">
+   <PIN pinname="Y" slicecount="1" visible="1" values="3.8">
    </PIN>
    <PIN pinname="XY" visible="1">
    </PIN>
@@ -3307,5 +3305,19 @@
    <LINK srcnodeid="619" srcpinname="XY" dstnodeid="471" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="608" srcpinname="Output" dstnodeid="481" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="622">
+   <BOUNDS type="Node" left="20265" top="20850" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Time" slicecount="1" values="0.5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="504" srcpinname="Output" dstnodeid="622" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="622" srcpinname="Output" dstnodeid="446" dstpinname="Enabled">
    </LINK>
    </PATCH>

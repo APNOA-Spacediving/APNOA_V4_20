@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Wobble_Circle_Txtr\Wobble_with_Txtr.v4p" scrollx="2805" scrolly="8265" systemname="Wobble_with_Txtr" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Wobble_Circle_Txtr\Wobble_with_Txtr.v4p">
+   <PATCH nodename="D:\APNOA_V4_20\CONTENT\GEO_FX\Wobble_Circle_Txtr\Wobble_with_Txtr.v4p" scrollx="10770" scrolly="8805" systemname="Wobble_with_Txtr" filename="D:\APNOA_V4_20\CONTENT\GEO_FX\Wobble_Circle_Txtr\Wobble_with_Txtr.v4p">
    <BOUNDS type="Window" left="8505" top="3450" width="15705" height="15810">
    </BOUNDS>
    <NODE systemname="IID (DX11.GeomFX)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.GeomFX\IID (DX11.GeomFX)\IID (DX11.GeomFX).v4p" nodename="IID (DX11.GeomFX)" componentmode="Hidden" id="1">
@@ -1859,9 +1859,9 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="185" srcpinname="Y Output Value" dstnodeid="179" dstpinname="Enabled">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="186">
    <BOUNDS type="Box" left="19140" top="15255" width="795" height="240">
    </BOUNDS>
@@ -1883,7 +1883,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.811" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.811">
    </PIN>
    </NODE>
    <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="187" dstpinname="Input 1">
@@ -2455,5 +2455,21 @@
    <LINK srcnodeid="224" srcpinname="Output" dstnodeid="225" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="36" srcpinname="Output" dstnodeid="39" dstpinname="Color Input">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="226">
+   <BOUNDS type="Node" left="22620" top="18000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Time" slicecount="1" values="0.2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="185" srcpinname="Y Output Value" dstnodeid="226" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="226" srcpinname="Output" dstnodeid="179" dstpinname="Enabled">
    </LINK>
    </PATCH>
